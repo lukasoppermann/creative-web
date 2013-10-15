@@ -26,16 +26,16 @@ http://css-tricks.com/snippets/css/
 ### Very helpful community 
 http://stackoverflow.com
 
-## Better JS lib than jquery  
-For all who are interested in js, check out minified, I really like it, and it is very small.   
-https://github.com/timjansen/minified.js
-
 ### Grids
 **CSS grid system**  
 https://github.com/lukasoppermann/gridified
 
 **Grid & more for modern browsers only**  
 http://philipwalton.github.io/solved-by-flexbox/
+
+## Better JS lib than jquery  
+For all who are interested in js, check out minified, I really like it, and it is very small.   
+https://github.com/timjansen/minified.js
 
 ## Validatoren (Fehler im Code finden)
 **CSS** http://jigsaw.w3.org/css-validator/#validate_by_input  
@@ -44,7 +44,7 @@ http://philipwalton.github.io/solved-by-flexbox/
 ## BTK SERVER Zugang
 http://blogs.btk-fh.de/it/fileserver/
 
-### repository of the old workshop
+## repository of the old workshop
 https://github.com/lukasoppermann/Contemporary-webdesign 
 
 ## Presentations
