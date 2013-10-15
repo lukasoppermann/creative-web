@@ -27,10 +27,10 @@ http://css-tricks.com/snippets/css/
 http://stackoverflow.com
 
 ### Grids
-**CSS Grid System**  
+**CSS grid system**  
 https://github.com/lukasoppermann/gridified
 
-**Grid & mehr NUR für sehr moderne Browser**  
+**Grid & more for modern browsers only**  
 http://philipwalton.github.io/solved-by-flexbox/
 
 ## Validatoren (Fehler im Code finden)
