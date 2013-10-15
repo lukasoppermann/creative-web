@@ -26,6 +26,20 @@ http://css-tricks.com/snippets/css/
 ### Very helpful community 
 http://stackoverflow.com
 
+### Grids
+**CSS Grid System**  
+https://github.com/lukasoppermann/gridified
+
+**Grid & mehr NUR für sehr moderne Browser**  
+http://philipwalton.github.io/solved-by-flexbox/
+
+## Validatoren (Fehler im Code finden)
+**CSS** http://jigsaw.w3.org/css-validator/#validate_by_input  
+**HTML** http://validator.w3.org/
+
+## BTK SERVER Zugang
+http://blogs.btk-fh.de/it/fileserver/
+
 ### repository of the old workshop
 https://github.com/lukasoppermann/Contemporary-webdesign 
 
