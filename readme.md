@@ -1,6 +1,11 @@
 # creative web
 
-### Link collection
+## Link collection
+
+### Introduction into HTML, CSS & more
+http://learn.shayhowe.com/  
+http://learnlayout.com/  
+http://www.codecademy.com/#!/exercises/0  
 
 ### Article & Tutorials
 http://net.tutsplus.com/  
@@ -24,7 +29,7 @@ http://stackoverflow.com
 ### repository of the old workshop**  
 https://github.com/lukasoppermann/Contemporary-webdesign 
 
-
+## Code snippets
 ### Retina Sprite
 
     @media
@@ -42,7 +47,7 @@ https://github.com/lukasoppermann/Contemporary-webdesign
 	    }
     }
 
-## Smooth scrolling   
+### Smooth scrolling   
 Ihr braucht:
 Ein Link `<a href="#einName">blabla</a>`   
 An dem Ort wo hingescrollt werden soll `<a name="einName"><h3>Überschrift</h3></a>`  
