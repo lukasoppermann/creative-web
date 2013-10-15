@@ -26,7 +26,7 @@ http://css-tricks.com/snippets/css/
 ### Very helpful community 
 http://stackoverflow.com
 
-### repository of the old workshop**  
+### repository of the old workshop
 https://github.com/lukasoppermann/Contemporary-webdesign 
 
 ## Code snippets
