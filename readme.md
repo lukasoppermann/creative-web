@@ -26,6 +26,10 @@ http://css-tricks.com/snippets/css/
 ### Very helpful community 
 http://stackoverflow.com
 
+## Better JS lib than jquery  
+For all who are interested in js, check out minified, I really like it, and it is very small.   
+https://github.com/timjansen/minified.js
+
 ### Grids
 **CSS grid system**  
 https://github.com/lukasoppermann/gridified
