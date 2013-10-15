@@ -1,17 +1,46 @@
 # creative web
 
-## Link collection
+### Link collection
 
-**Tutorials**
+### Article & Tutorials
 http://net.tutsplus.com/  
 http://coding.smashingmagazine.com/  
-http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/  
-
+http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/   
+http://alistapart.com   
+http://webdesign.tutsplus.com/ 
 http://tympanus.net/codrops/ 
 
-**repository of the old workshop**  
+### Which CSS3 / HTML5 specs are save to use 
+http://caniuse.com
+
+### CSS properties explained 
+https://developer.mozilla.org/en-US/docs/Web/CSS  
+http://www.w3schools.com/  
+http://css-tricks.com/snippets/css/
+
+### Very helpful community 
+http://stackoverflow.com
+
+### repository of the old workshop**  
 https://github.com/lukasoppermann/Contemporary-webdesign 
 
+
+### Retina Sprite
+
+    @media
+    only screen and (-Webkit-min-device-pixel-ratio: 2),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (   -moz-min-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+	    .sprite, .pseudo-sprite:before{
+		    background-image: url('../../layout/lukas-oppermann-sprite@2x.png');
+		    background-size: 500px 360px;
+	    }
+    }
 
 ## Smooth scrolling   
 Ihr braucht:
