@@ -29,6 +29,12 @@ http://stackoverflow.com
 ### repository of the old workshop
 https://github.com/lukasoppermann/Contemporary-webdesign 
 
+## Presentations
+
+28.10.2013  
+**Git & github (Hanju Kim)**  
+**understanding css & selector importance (Maximilien Weiss)**  
+
 ## Code snippets
 ### Retina Sprite
 
