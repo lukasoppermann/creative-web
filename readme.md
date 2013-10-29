@@ -2,7 +2,7 @@
 
 ## Link collection
 
-### Introduction into HTML, CSS & more
+### Introduction to HTML, CSS & more
 http://learn.shayhowe.com/  
 http://learnlayout.com/  
 http://www.codecademy.com/#!/exercises/0  
