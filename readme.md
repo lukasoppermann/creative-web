@@ -4,6 +4,15 @@
 
 **01 Introduction:** http://www.slideshare.net/slideshow/embed_code/33373363
 
+## Links
+
+**Browsersupport von CSS & HTML** http://caniuse.com
+
+**Mozilla Dokumentation** https://developer.mozilla.org/en-US/docs/Web/
+
+**Validator (Fehler im Code finden) CSS** http://jigsaw.w3.org/css-validator/#validate_by_input  
+**Validator HTML** http://validator.w3.org/
+
 ## Excercise
 
 **Week 01**
@@ -17,7 +26,8 @@
 * `portfolio.html`-Seite erstellen
   * link von `index.html` auf `portfolio.html` erstellen
 
-Ein Tutorial in dem das meisten auch noch mal erklärt wird: http://www.htmldog.com/guides/html/beginner/
+**HTML Einführung:** https://developer.mozilla.org/de/docs/Web/Guide/HTML/Einf%C3%BChrung   
+**Ein Tutorial in dem das meisten auch noch mal erklärt wird:** http://www.htmldog.com/guides/html/beginner/
 
 ## Link collection
 
@@ -34,12 +44,8 @@ http://alistapart.com
 http://webdesign.tutsplus.com/ 
 http://tympanus.net/codrops/ 
 
-### Which CSS3 / HTML5 specs are save to use 
-http://caniuse.com
-
 ### CSS properties explained 
 https://developer.mozilla.org/en-US/docs/Web/CSS  
-http://www.w3schools.com/  
 http://css-tricks.com/snippets/css/
 
 ### Very helpful community 
@@ -55,14 +61,3 @@ http://philipwalton.github.io/solved-by-flexbox/
 ## Better JS lib than jquery  
 For all who are interested in js, check out minified, I really like it, and it is very small.   
 https://github.com/timjansen/minified.js
-
-## Validatoren (Fehler im Code finden)
-**CSS** http://jigsaw.w3.org/css-validator/#validate_by_input  
-**HTML** http://validator.w3.org/
-
-## BTK SERVER Zugang
-http://blogs.btk-fh.de/it/fileserver/
-
-## repository of the old workshop
-https://github.com/lukasoppermann/Contemporary-webdesign 
-
