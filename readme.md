@@ -10,6 +10,8 @@
 
 **Mozilla Dokumentation** https://developer.mozilla.org/en-US/docs/Web/
 
+**Sehr hilfreiche Community** http://stackoverflow.com
+
 **Validator (Fehler im Code finden) CSS** http://jigsaw.w3.org/css-validator/#validate_by_input  
 **Validator HTML** http://validator.w3.org/
 
@@ -48,16 +50,9 @@ http://tympanus.net/codrops/
 https://developer.mozilla.org/en-US/docs/Web/CSS  
 http://css-tricks.com/snippets/css/
 
-### Very helpful community 
-http://stackoverflow.com
-
 ### Grids
 **CSS grid system**  
 https://github.com/lukasoppermann/gridified
 
 **Grid & more for modern browsers only**  
 http://philipwalton.github.io/solved-by-flexbox/
-
-## Better JS lib than jquery  
-For all who are interested in js, check out minified, I really like it, and it is very small.   
-https://github.com/timjansen/minified.js
