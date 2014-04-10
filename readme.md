@@ -17,6 +17,7 @@
 * `portfolio.html`-Seite erstellen
   * link von `index.html` auf `portfolio.html` erstellen
 
+Ein Tutorial in dem das meisten auch noch mal erklärt wird: http://www.htmldog.com/guides/html/beginner/
 
 ## Link collection
 
