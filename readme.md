@@ -10,6 +10,11 @@
 * github Account erstellen
 * `index.html`-Seite erstellen
   * `base.css` erstellen und in die index.html einbinden
+  * min. 10 verschiedenen HTML-Tags (wie bspw. <div>) nutzen
+  * min. 10 verschiedenen Css-Styles (wie bspw. color: red;) anwenden
+    * Tag-Selektor, class-Selector und id-Selector nutzen
+  * 3 Farbsysteme (namen, hex, rgb/a) nutzen
+  * 
 
 
 ## Link collection
