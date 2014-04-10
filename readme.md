@@ -1,5 +1,16 @@
 # creative web
 
+## Presentations
+
+**01 Introduction:** http://www.slideshare.net/slideshow/embed_code/33373363
+
+## Excercise
+
+**week 01**
+
+01.github account erstellen
+- 
+
 ## Link collection
 
 ### Introduction to HTML, CSS & more
@@ -47,53 +58,3 @@ http://blogs.btk-fh.de/it/fileserver/
 ## repository of the old workshop
 https://github.com/lukasoppermann/Contemporary-webdesign 
 
-## Presentations
-
-28.10.2013  
-**Git & github (Hanju Kim)**  
-**understanding css & selector importance (Maximilien Weiss)**  
-
-## Code snippets
-### Retina Sprite
-
-    @media
-    only screen and (-Webkit-min-device-pixel-ratio: 2),
-    only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (   min--moz-device-pixel-ratio: 2),
-    only screen and (   -moz-min-device-pixel-ratio: 2),
-    only screen and (     -o-min-device-pixel-ratio: 2/1),
-    only screen and (        min-device-pixel-ratio: 2),
-    only screen and (                min-resolution: 192dpi),
-    only screen and (                min-resolution: 2dppx) {
-	    .sprite, .pseudo-sprite:before{
-		    background-image: url('../../layout/lukas-oppermann-sprite@2x.png');
-		    background-size: 500px 360px;
-	    }
-    }
-
-### Smooth scrolling   
-Ihr braucht:
-Ein Link `<a href="#einName">blabla</a>`   
-An dem Ort wo hingescrollt werden soll `<a name="einName"><h3>Überschrift</h3></a>`  
-
-    // -----------------------------------
-    // Smooth scrolling
-    $('a[href*=#]').on('click', function()
-    {
-    	if( location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        || location.hostname == this.hostname )
-        {
-            // suche nach dem Ziel zum Hinscrollen
-            var target = $(this.hash);
-            target = target.length ? target : 
-            $('[name=' + this.hash.slice(1) +']');
-            // wenn ein Ziel (target) exisiert, führe aus ...
-            if( target.length )
-            {
-            	$('html,body').animate({
-            		scrollTop: target.offset().top
-            	}, 1000);
-            	return false;
-            }
-        }
-    });
