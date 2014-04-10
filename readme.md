@@ -14,7 +14,8 @@
   * min. 10 verschiedenen Css-Styles (wie bspw. color: red;) anwenden
     * Tag-Selektor, class-Selector und id-Selector nutzen
   * 3 Farbsysteme (namen, hex, rgb/a) nutzen
-  * 
+* `portfolio.html`-Seite erstellen
+  * link von `index.html` auf `portfolio.html` erstellen
 
 
 ## Link collection
