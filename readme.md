@@ -6,10 +6,11 @@
 
 ## Excercise
 
-**week 01**
+**Week 01**
+* github Account erstellen
+* `index.html`-Seite erstellen
+  * `base.css` erstellen und in die index.html einbinden
 
-01.github account erstellen
-- 
 
 ## Link collection
 
