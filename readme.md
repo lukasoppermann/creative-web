@@ -20,7 +20,7 @@
 ## Excercise
 
 **Week 02**  
-1. Write 3 html pages with a navi <ul> linking them together.
+1. Write 3 html pages with a navi \<ul> linking them together.
  * Use the same stylesheet for all three files
  * Add content and style it using css try at lest 5 css3 properties like gradient, border-radius, transform, etc.
  * try to reuse css styles by using multiple classes per element when it makes sense
