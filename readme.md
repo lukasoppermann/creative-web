@@ -19,6 +19,20 @@
 
 ## Excercise
 
+**Week 02**
+1. Write 3 html pages with a navi <ul> linking them together.
+ * Use the same stylesheet for all three files
+ * Add content and style it using css try at lest 5 css3 properties like gradient, border-radius, transform, etc.
+ * try to reuse css styles by using multiple classes per element when it makes sense
+
+2. Create and link a javascript file with the alert inside, so that you see the alert message when you open the html file in your browser
+
+3. Read this article to get an idea what JSON is  http://de.wikipedia.org/wiki/JavaScript_Object_Notation
+
+4. If you know JS already read up on handlebars.js
+
+-----
+
 **Week 01**
 * github Account erstellen
 * `index.html`-Seite erstellen
