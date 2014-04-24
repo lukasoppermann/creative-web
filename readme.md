@@ -34,6 +34,8 @@
  * use a box-shadow
  * use border-radius on something
 
+-----
+
 **Week 02**  
 1. Write 3 html pages with a navi \<ul> linking them together.
  * Use the same stylesheet for all three files
