@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="language" content="en" />
+		<meta name="robots" content="index,follow" />
+		<meta name="author" content="Lukas Oppermann – vea.re" />
+		<meta name="description" content="Mein das meine Webseite." />
+		<title>Lukas Oppermann - Portfolio</title>
+		<link rel="stylesheet" href="./libs/css/base.css" type="text/css" media="screen" charset="utf-8" />
+		<script type="text/javascript" charset="utf-8" src="./libs/js/handlebars-v1.3.0.js"></script>
+	</head>
+	<body>
+		<script id="test" type="text/x-handlebars-template">
+		<h1>{{headline}}</h1>	
+		</script>
+		<script type="text/javascript">
+			var source   = document.getElementById('test').innerHTML;
+			var template = Handlebars.compile(source);
+			var context = {headline: "My New Post", body: "This is my first post!"}
+			var html    = template(context);
+			document.body.innerHTML = html;
+		</script>
+	</body>
+</html>
