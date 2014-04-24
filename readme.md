@@ -6,6 +6,8 @@
 
 **02 CSS:** http://www.slideshare.net/lukasoppermann/cw2-02-css
 
+**03 JavaScript** http://www.slideshare.net/lukasoppermann/cw2-03
+
 ## Links
 
 **Browsersupport von CSS & HTML** http://caniuse.com
@@ -19,6 +21,19 @@
 
 ## Excercise
 
+**Week 03**
+
+1. Write an html pages and include an external js file.
+ * add a local variable
+ * add a function which does something with an argument
+ * add a local variable to the function 
+
+2. Add an external css file and try the following
+ * use a css3 gradient on an html element
+ * use a transition on something using the :hover pseudo-class
+ * use a box-shadow
+ * use border-radius on something
+
 **Week 02**  
 1. Write 3 html pages with a navi \<ul> linking them together.
  * Use the same stylesheet for all three files
@@ -27,7 +42,7 @@
 
 2. Create and link a javascript file with the alert inside, so that you see the alert message when you open the html file in your browser
 
-3. Read this article to get an idea what JSON is  http://de.wikipedia.org/wiki/JavaScript_Object_Notation
+3. Read this article to get an idea what JSON is http://de.wikipedia.org/wiki/JavaScript_Object_Notation
 
 4. If you know JS already read up on handlebars.js
 
@@ -44,7 +59,7 @@
 * `portfolio.html`-Seite erstellen
   * link von `index.html` auf `portfolio.html` erstellen
 
-**HTML Einführung:** https://developer.mozilla.org/de/docs/Web/Guide/HTML/Einf%C3%BChrung   
+**HTML Einführung:** https://developer.mozilla.org/de/docs/Web/Guide/HTML/Einf%C3%BChrung
 **Ein Tutorial in dem das meisten auch noch mal erklärt wird:** http://www.htmldog.com/guides/html/beginner/
 
 ## Link collection
@@ -57,12 +72,12 @@ http://www.codecademy.com/#!/exercises/0
 ### Article & Tutorials
 http://net.tutsplus.com/  
 http://coding.smashingmagazine.com/  
-http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/   
-http://alistapart.com   
-http://webdesign.tutsplus.com/ 
-http://tympanus.net/codrops/ 
+http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/
+http://alistapart.com
+http://webdesign.tutsplus.com/
+http://tympanus.net/codrops/
 
-### CSS properties explained 
+### CSS properties explained
 https://developer.mozilla.org/en-US/docs/Web/CSS  
 http://css-tricks.com/snippets/css/
 
