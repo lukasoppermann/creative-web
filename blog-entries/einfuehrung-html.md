@@ -135,8 +135,29 @@ Außerdem braucht jedes Bild ein alt-Text (alternative Text) welcher angezeigt w
 
 <img src="./media/polar-bear.jpg" alt="Eisbär baut Iglu" />
 
-Das <div>-Element
+Das <div>-Element wird genutzt um HTML-Seiten zu strukturieren. Es ist im Grunde eine Box die mit Inhalt gefüllt werden kann. So ist es einfach verschiedenen Teilbereiche einer Seite voneinander zu trennen. Im unten gezeigten Beispiel wird der gesamte Inhalt in ein <div>-Element gegeben damit dieser später rechts von dem Menü angezeigt werden kann und nicht jede Arbeit einzeln ausgerichtet werden muss. Das Div sammelt somit allen Inhalt in einem leicht zu Stylenden Element.
 
+<div> <!-- Navi, wird später links positioniert -->
+  <ul> 
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</div>
+
+<div>
+	<h1>Porfolio</h1>
+	
+	<div>
+		<h2>Titel der Arbeite</h2>
+		<img src="./media/item.jpg" alt="Beschreibung des Bildes">
+		<p>Beschreibender Text</p>	
+	</div>
+
+</div>
+
+
+Dabei funktionieren die neuen HTML5-Element wie bspw. <menu>, <nav>, <aside>, <article> genauso wie divs. Der einzige Sinn dieser Elemente ist, einen Kontext zu liefer und leichter von Tools wie bspw. Artikel-Readern dargestellt werden zu können.
 
 ## Seiten verknüpfen
 
@@ -151,3 +172,26 @@ Ein weiteres interessantes Attribut ist das **Target**-Attribut. Dieses gibt an,
 <a href="./about.html" title="Beschreibungstext auf hover" ><strong>Fetter, klickbarer Link-Text</strong></a>
 
 # Fehler finden und beheben
+
+Es ist leicht bei der HTML-Programmierung Fehler zu machen und vor allem am Anfang passiert das auch sehr oft. Das Resultat ist meist eine komplett weiße Seite und somit leider wenig hilfreich. Allerdings gibt es einige gute Möglichkeiten Fehler schnell zu finden und oft begangene Fehler auf die man achten kann.
+
+## Techniken zur Fehlersuche
+
+## Häufige Fehler
+
+**Tag ist nicht geschlossen**
+
+Das äußert sich zumeist indem der Style falsch ist oder auf einmal ein sehr großer Bereich ein Link oder eine Überschrift ist. Zumeist wurde das schließen Tag entweder ganz vergessen oder enthält keinen Slash.
+
+<h1> Title <!-- hier fehlt eine </h1>-Element -->
+<p>Das hier wird nun auch als Überschrift dargestellt.</p>
+
+<h2>Überschrift<h2> <!-- hier fehlt eine / in dem h2-Element -->
+<p>Das hier wird nun auch als Überschrift dargestellt.</p>
+
+**Tag-Klammer ist nicht geschlossen**
+
+<h1< Title </h1> <!-- öffnender h1-Tag is falsch 
+
+Richtig wäre
+<h1> Title </h1>
