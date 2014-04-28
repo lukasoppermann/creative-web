@@ -184,18 +184,23 @@ Es ist leicht bei der HTML-Programmierung Fehler zu machen und vor allem am Anfa
 
 ## Techniken zur Fehlersuche
 
-HTML Validator
+**HTML Validator**
 Wenn etwas mit der Seite nicht stimmt bzw. einer der im Folgenden beschriebenen Umstände (leere Seite, falsche Styles, etc.) eintritt, sollte als erstes der HTML-Validator genutzt werden.
 
 Ein Validator ist ein Tool, welches den Syntax (Code) prüft und Fehler ausgibt. Dafür gibt es den offiziellen Validator des W3C http://validator.w3.org/#validate_by_input. Leider sind die Fehlermeldungen teilweise etwas Kryptisch, meistens kann man aber davon ausgehen, dass der Fehler zwischen der 5 Zellen vor der angegebenen Zeile und 5 Zeilen danach auftritt (bspw. wenn Zeile 12 angegeben ist, liegt der Fehler meist zwischen Zeile 7 und 17). 
 
 Anfänglich sind Validatoren etwas umständlich, mit etwas Gewöhnung kann man so aber schnell den Fehler finden.
 
-Auskommentieren
+**Auskommentieren**
 
-Typische Fehler suchen
 
-Stackoverflow / Communities
+
+**Typische Fehler suchen**
+
+Oft findet man auch schnell selbst einen der unten aufgeführten Fehler. Wenn ihr nach jeder Änderung kurz testet, ob die Seite noch funktioniert, wisst ihr ja sobald ein Fehler auftritt, dass es mit der letzen Änderung zusammen hängt. Der Fehler lässt sich somit oft schnell auffinden. 
+Das falsche schließen von Tags kann auch gut mithilfe der *Suchen und ersetzen* Funktion gefunden werden. ersetzt einfach alle **<** durch **<** (also dasselbe Zeichen) und alle **>** durch **>**. Die Anzahl der Ersetzung wir bspw. in Textmate angezeigt und sollte identisch sein.
+
+**Stackoverflow / Communities**
 
 ## Häufige Fehler
 
