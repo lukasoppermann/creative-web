@@ -6,7 +6,7 @@
 
 **02 CSS:** http://www.slideshare.net/lukasoppermann/cw2-02-css
 
-**03 JavaScript** http://www.slideshare.net/lukasoppermann/cw2-03
+**03 JavaScript:** http://www.slideshare.net/lukasoppermann/cw2-03
 
 ## Links
 
