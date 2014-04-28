@@ -50,7 +50,9 @@ Innerhalb des <html>-Elementes befindet sich das <head> und das <body>-Element
 ## HTML-Tags im BODY
 
 In den **Body** können nun HTML-Elemente eingefügt werden um Inhalte zu strukturieren. Überschriften werden mit <h>-Tags von der wichtigsten Überschrift <h1></h1> (sollte nur einmalig pro HTML-Dokument vorkommen) zu den weniger wichtigen Überschriften <h2> bis <h5> definiert.
-Fließtext kann bspw. in eine <p>-Element (Paragraph-Tag) definiert werden.
+Fließtext kann bspw. in eine <p>-Element (Paragraph-Tag) definiert werden. 
+
+Alle HTML-Tags werden immer komplett mit Kleinbuchstaben geschrieben.
 
 ```
 <!DOCTYPE html>
@@ -171,11 +173,29 @@ Ein weiteres interessantes Attribut ist das **Target**-Attribut. Dieses gibt an,
 
 <a href="./about.html" title="Beschreibungstext auf hover" ><strong>Fetter, klickbarer Link-Text</strong></a>
 
+# Richtiger Coding-Style
+
+
+
+
 # Fehler finden und beheben
 
 Es ist leicht bei der HTML-Programmierung Fehler zu machen und vor allem am Anfang passiert das auch sehr oft. Das Resultat ist meist eine komplett weiße Seite und somit leider wenig hilfreich. Allerdings gibt es einige gute Möglichkeiten Fehler schnell zu finden und oft begangene Fehler auf die man achten kann.
 
 ## Techniken zur Fehlersuche
+
+HTML Validator
+Wenn etwas mit der Seite nicht stimmt bzw. einer der im Folgenden beschriebenen Umstände (leere Seite, falsche Styles, etc.) eintritt, sollte als erstes der HTML-Validator genutzt werden.
+
+Ein Validator ist ein Tool, welches den Syntax (Code) prüft und Fehler ausgibt. Dafür gibt es den offiziellen Validator des W3C http://validator.w3.org/#validate_by_input. Leider sind die Fehlermeldungen teilweise etwas Kryptisch, meistens kann man aber davon ausgehen, dass der Fehler zwischen der 5 Zellen vor der angegebenen Zeile und 5 Zeilen danach auftritt (bspw. wenn Zeile 12 angegeben ist, liegt der Fehler meist zwischen Zeile 7 und 17). 
+
+Anfänglich sind Validatoren etwas umständlich, mit etwas Gewöhnung kann man so aber schnell den Fehler finden.
+
+Auskommentieren
+
+Typische Fehler suchen
+
+Stackoverflow / Communities
 
 ## Häufige Fehler
 
@@ -191,7 +211,36 @@ Das äußert sich zumeist indem der Style falsch ist oder auf einmal ein sehr gr
 
 **Tag-Klammer ist nicht geschlossen**
 
-<h1< Title </h1> <!-- öffnender h1-Tag is falsch 
+Dieser Fehler äußert sich meist, indem die komplette Seite und auch der Quelltext leer ist.
 
-Richtig wäre
+<!-- schließender h1-Tag ist falsch, da < anstatt > am Ende -->
+<h1> Title </h1<   
+
+<!-- Richtig wäre </h1> -->
 <h1> Title </h1>
+
+**Falsche Reihenfolge beim Schließen von Elementen**
+
+Dieser Fehler zeigt sich meist indem die Styles falsch dargestellt werden. Hier würde sowohl _Überschrift_ als auch _Copy Text_ als Headline dargestellt werden.
+
+<h1>Überschrift
+<p>Copy Text</p></h1>
+
+**Falsche Anführungszeichen**
+
+Bei Attributen vergisst man oft die Anführungszeichen komplett, oder an einer stelle.
+Dieser Fehler zeigt sich meist indem die komplette Seite und auch der Quelltext leer ist, da ein Parse-Error (Fehler beim Aufbereiten des Dokumentes durch den Browser) auftritt.
+
+<!-- Gar keine Anführungszeichen -->
+<a href=http://www.google.de>Google</a>
+
+<!-- Anführungszeichen nur auf einer Seite -->
+<img src="image.jpg />
+
+<!-- Doppelte Anführungszeichen auf einer Seite -->
+<div class="class-name"">...
+
+<!— Falsche (typografische) Anführungszeichen -->
+<div class=”class-name„>…
+<div class=«class-name»>…
+
