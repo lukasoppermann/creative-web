@@ -1,6 +1,34 @@
 # Einführung in HTML
 
-HyperText Markup Language (HTML) wird genutzt um die Struktur eine Webseite zu definieren.
+# Der richtige Editor
+
+Die Auswahl an Editor ist groß und vor allem für Mac gibt es eine Masse and guten Editoren. Welchen Editor man nutzt ist Geschmacksfrage, wichtig ist vor allem, dass man ein Syntax-Theme nutzt, bei welche, einem sofort auffällt, wo im Code Fehler stecken und welche Elemente anders aussehen (und somit nicht erkannt werden, d.h. falsch geschrieben sind).
+Sowohl Autocompletion als auch eine Vorschau mit integrierten Tools sollte vermieden werden, da ersteres leicht dazu führt, dass man nicht lernt wie Elemente geschrieben werden und was richtiger Syntax ist, sodass Fehler viel schwerer bemerkt werden. Voransichten in Editoren sind zumeist nicht korrekt und stelle nur einen Browser dar. Um HTML-Dateien anzusehen, reicht es diese in einem beliebigen Browser zu öffnen.
+
+**TextMate (Mac)**
+TextMate war der erste richtig gute Editor für Mac. Die Version 2.0 ist momentan in der Alpha und kann kostenlos genutzt werden. Über einen Bundle-Editor ist es einfach Shortcuts zu bauen, sodass bspw. "HTML5 + [Tab-Taste]" ein komplettes Grundgerüst für eine HTML-Seite einfügt.
+
+TextMate Alpha
+
+**Atom (Mac)**
+Atom ist ein sehr junger von Github entwickelter Editor der vollständig auf Web-Technologie basiert (aber als vollwertige App mit Dateizugriff, etc. auf dem Mac läuft). Dadurch und da bist auf die Core alles Open-Source ist, ist es sehr einfach eigenen Plugins zu schreiben, sodass es schon jetzt tausende Erweiterungen gibt. In der momentane Beta-Phase ist der Editor kostenlos.
+
+Atom Beta
+
+**SublimeText (Mac / Windows)**
+Sublime ist ein für Mac und Windows erhältlicher Editor der ähnliche Features wie TextMate und Atom enthält. Der Editor kann kostenlos getestet werden.
+
+SublimeText
+
+
+
+
+**Weitere Editoren**
+Es gibt weitere Editoren wie bspw. Notepad++, Adobe Edge, BBEdit, etc. welchen Editor ihr nutzt ist letztendlich egal, sofern ihr mit diesem gut klar kommt und ein gutes Syntax-Theme vorhanden ist.
+Eine Sammlung guter Themes gibt es bspw. von Dayle Rees (https://github.com/daylerees/colour-schemes).
+
+
+> HyperText Markup Language (HTML) wird genutzt um die Struktur eine Webseite zu definieren.
 
 ## Grundlagen
 
@@ -175,6 +203,36 @@ Ein weiteres interessantes Attribut ist das **Target**-Attribut. Dieses gibt an,
 
 # Richtiger Coding-Style
 
+Ein guter Coding-Style ist zwar für das funktionieren des Codes nicht von Bedeutung, allerdings erleichtert es das finden von Fehler enorm. Durch einen ordentlichen und gleich bleibenden Stil ist es auch einfach sich im Code zurecht zu finden und die Hierarchien zu erkennen.
+
+Es gibt viele Ansichten wie gute Code formatiert ist und jedes Unternehmen hat einen eigenen Styleguide wie bspw. Google (https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#HTML_Style_Rules) oder Github (https://github.com/styleguide/templates). 
+Sofern man nicht mit anderen zusammen an einem Projekt arbeitet sind nur wenige Punkte wirklich wichtig.
+
+**Einheitliches Einrückung**
+Code sollte immer gleich und nach Hierarchie eingerückt werden. Bspw. immer mit 2 Tabs. Das gilt sowohl wenn es tiefer in die Hierarchie geht, als auch wenn die Elemente wieder geschlossen werden.
+
+<body> <!-- nicht eingerückt, da level 0 -→
+	<div> <!-- eingerückt, da level 1 -→
+		<h1>Headline</h1> <!-- zweifach eingerückt, da level 2 -→
+	</div>
+</body>
+
+
+**Neue Zeile für jeden Block**
+Jedes Block-Element (https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements) (bspw. <div>, <ul>, <ol>, <li>, <p>) sollte auf eine neue Zeile gesetzt werden, schließende Tags aber in der gleichen Zeile. Inline-Element (https://developer.mozilla.org/en-US/docs/HTML/Inline_elements) können innerhalb von Block-Elementen und auf einer Zeile gesetzt werden.
+
+<div>
+	<ul>
+		<li>Item</li> <!-- schließende Tags in der gleichen Zeile -→
+	</ul>
+	<p>Copy text <strong>Inline-Element</strong>.</p>
+</div>
+
+
+**Doppelte Anführungszeichen nutzen**
+Für die alle Eigenschaftsdefinitionen von Elementen sollten doppelte Anführungszeichen genutzt werden.
+
+<div class="class-name">
 
 
 
@@ -193,7 +251,15 @@ Anfänglich sind Validatoren etwas umständlich, mit etwas Gewöhnung kann man s
 
 **Auskommentieren**
 
+Sofern man überhaupt keine Idee hat wo der Fehler liegen könnten und auch der Validator nicht hilft, kann man anfangen Teile des Codes auszukommentieren, d.h. den Code mit Kommentar-Zeichen zu umgeben, damit dieser temporär deaktiviert ist. Funktioniert der Rest dann, muss der Fehler innerhalb des auskommentierten Bereiches liegen.
 
+<div>...</div>
+
+<!-- hier beginnt das kommentar
+<div< ... </div>
+und hier endet es -→
+
+<p>...</p>
 
 **Typische Fehler suchen**
 
@@ -201,6 +267,8 @@ Oft findet man auch schnell selbst einen der unten aufgeführten Fehler. Wenn ih
 Das falsche schließen von Tags kann auch gut mithilfe der *Suchen und ersetzen* Funktion gefunden werden. ersetzt einfach alle **<** durch **<** (also dasselbe Zeichen) und alle **>** durch **>**. Die Anzahl der Ersetzung wir bspw. in Textmate angezeigt und sollte identisch sein.
 
 **Stackoverflow / Communities**
+
+Programmierer sind im allgemeinen recht hilfsbereite Menschen und so gibt es einige gute Foren in denen man Hilfe für Probleme bekommen kann. Eine der besten Communities ist definitiv Stackoverflow.com (englisch). Oft hilft schon eine Suche, da hier wirklich viele Fragen und Antworten vorhanden sind.
 
 ## Häufige Fehler
 

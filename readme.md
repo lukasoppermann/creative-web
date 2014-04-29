@@ -1,5 +1,7 @@
 # creative web
 
+## Material
+**Einführung in HTML (deutsch)** https://medium.com/design-technology/32b473516e25
 ## Presentations
 
 **01 Introduction:** http://www.slideshare.net/lukasoppermann/creative-web-2-introduction
@@ -25,26 +27,31 @@
 
 1. Write an html pages and include an external js file.
  * add a local variable
- * add a function which does something with an argument
- * add a local variable to the function 
+ * add a function which does something with an
+argument
+ * add a local variable to the function
+
 
 2. Add an external css file and try the following
  * use a css3 gradient on an html element
- * use a transition on something using the :hover pseudo-class
+ * use a transition on something using the :hover
+pseudo-class
  * use a box-shadow
  * use border-radius on something
 
 -----
 
 **Week 02**  
-1. Write 3 html pages with a navi \<ul> linking them together.
+1. Write 3 html pages with a navi \<ul> linking them
+together.
  * Use the same stylesheet for all three files
  * Add content and style it using css try at lest 5 css3 properties like gradient, border-radius, transform, etc.
  * try to reuse css styles by using multiple classes per element when it makes sense
 
 2. Create and link a javascript file with the alert inside, so that you see the alert message when you open the html file in your browser
 
-3. Read this article to get an idea what JSON is http://de.wikipedia.org/wiki/JavaScript_Object_Notation
+3. Read this article to get an idea what JSON is
+http://de.wikipedia.org/wiki/JavaScript_Object_Notation
 
 4. If you know JS already read up on handlebars.js
 
