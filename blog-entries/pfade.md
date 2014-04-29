@@ -35,4 +35,17 @@ Relative Pfade sind immer relative zu der Datei von der aus auf eine Datei verwi
 Um von dem momentane Ordner _website_ in den Unterordner _bilder_ zu verweisen, wird der für Domains typische Slash **/**
 genutzt. Der relative Pfad zu diesem Ordner ist also **website/bilder/**.
 
-##
+## In übergeordnete Ordner verweisen
+Um von dem aktuellen Ordner in einen höheren Ordner zu gelangen wird **../** genutzt. Um also in der _index.html_ die sich im Ordner _website_ befindet in den Ordner _praese_ zu gelangen der auf der gleichen Ebene wie _website_ liegt, wird folgender relativer Pfad genutzt: **../praese/**. Diese Notation kann auch mehrfach verwendet werden um mehrere Ordner höher in der Hierarchie zu gelangen, bspw. **../../projecte/**
+
+# Zusammenfassung
+
+**Absolute Pfade** beginnen mit der Domain und funktionieren nur solange nichts an dem Ort an welchem die Datei liegt, geändert wird.
+
+**Relative Pfade** beschreiben einen Pfad ausgehend von dem Ordner in welche die Datei liegt von der aus auf eine andere Datei verwiesen wird. Sofern ein komplettes Ordnerkonstrukt verschoben wird (bspw. wenn eine Webseite via FTP auf einen Server geladen wird) funktionieren diese Pfade weiterhin-
+
+Ein Pfade welcher mit einem Slash beginnt geht von dem aktuellen Ordner aus bspw. **/unterordner**
+
+Ein Pfade der mit einem **./** beginnt, startet aus dem Root-Verzeichnis also der höchsten Hierarchie bspw. **./unterverzeichnis**
+
+Ein Pfad der mit einem oder mehreren **../** beginnt startet einen bzw. mehrere Ordner über dem aktuellen Ordner bspw. **../../verzeichnis**
