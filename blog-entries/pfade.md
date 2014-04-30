@@ -21,7 +21,7 @@ Ein relativer ist in unserem Beispiel die Aussage.
 > Ich bin in meinem Auto.
 
 Hier ist der Pfad *Auto > Ich* dieses Aussage ist korrekt solange ich in meinem Auto bin, ob mein Auto in Berlin oder Hamburg steht ist in diesem Fall egal, solange der Suchende im selben Ort wie ich ist.
-Übertragen aufs unser Beispiel wäre dieser Pfad _./images/daftpunktocat-thomas.gif_.
+Übertragen aufs unser Beispiel wäre dieser Pfad _/images/daftpunktocat-thomas.gif_.
 Wenn ich von meiner _index.html_ auf diesen Pfad verweise wird die Datei angezeigt, solange sie in dem Ordner _images_ auf der selben Domain wie meine Datei _index.html_ liegt. Und der Ordner _images_ im selben Ordner wie meine _index.html_ liegt. Ob sich meine Dateien auf octodex.github.com oder einer anderen Domain befinden ist egal, solange bei auf derselben domain liegen, also relative zueinander sind.
 
 
@@ -29,14 +29,22 @@ Wenn ich von meiner _index.html_ auf diesen Pfad verweise wird die Datei angezei
 Absolute Pfade sind einfach, im Grunde nur eine Domain, bei relative Pfaden gibt es allerdings Besonderheiten.
 
 ## Startpunkt
-Relative Pfade sind immer relative zu der Datei von der aus auf eine Datei verwiesen wird. Wenn meine Datei also im Ordner _website_ liegt, so verweist **./** auf diesen Ordner. Somit verweist **./bear.png** auf die Datei _bear.png_ im Ordner _website_.
+Relative Pfade sind immer relative zu der Datei von der aus auf eine Datei verwiesen wird. Wenn meine Datei also im Ordner _website_ liegt, so verweist **/** auf diesen Ordner. Somit verweist **/bear.png** auf die Datei _bear.png_ im Ordner _website_.
 
 ## In Unterordner verweisen
 Um von dem momentane Ordner _website_ in den Unterordner _bilder_ zu verweisen, wird der für Domains typische Slash **/**
-genutzt. Der relative Pfad zu diesem Ordner ist also **website/bilder/**.
+genutzt. Der relative Pfad zu diesem Ordner ist also **/website/bilder/**.
 
 ## In übergeordnete Ordner verweisen
 Um von dem aktuellen Ordner in einen höheren Ordner zu gelangen wird **../** genutzt. Um also in der _index.html_ die sich im Ordner _website_ befindet in den Ordner _praese_ zu gelangen der auf der gleichen Ebene wie _website_ liegt, wird folgender relativer Pfad genutzt: **../praese/**. Diese Notation kann auch mehrfach verwendet werden um mehrere Ordner höher in der Hierarchie zu gelangen, bspw. **../../projecte/**
+
+## In den Root-Ordner verweisen
+**Root** (engl. Wurzel) bezeichnet den obersten Ordner einer Ordnerstruktur. Um auf diesen Ordner zu verweisen wird die Notation **./** genutzt. Um also auf den Ordner *website* im *Root-Verzeichnis* zu verweisen kann die Notation **./website/** genutzt werden.
+
+Diese Notation ist mit Vorsicht zu genießen, da das jeweilige System bestimmt, welcher Ordner das *Root-Verzeichnis* ist. So kann es sein, dass ein Webserver den Ordner **www** als *Root* definiert obwohl es noch eine weitere Hierachie-Ebene gibt.
+
+Die *Root-Notation* kann nur einfach verwendet werden, allerdings kann man diese mit der *../*-Notation verbinden.
+Im oberen Beispiel des Webservers kann also mit *./../* auf die oberste Hierachie-Ebene verwiesen werden.
 
 # Zusammenfassung
 
@@ -46,6 +54,6 @@ Um von dem aktuellen Ordner in einen höheren Ordner zu gelangen wird **../** ge
 
 Ein Pfade welcher mit einem Slash beginnt geht von dem aktuellen Ordner aus bspw. **/unterordner**
 
-Ein Pfade der mit einem **./** beginnt, startet aus dem Root-Verzeichnis also der höchsten Hierarchie bspw. **./unterverzeichnis**
+Ein Pfade der mit einem **./** beginnt, startet aus dem Root-Verzeichnis also zumeist der höchsten Hierarchie bspw. **./unterverzeichnis**
 
 Ein Pfad der mit einem oder mehreren **../** beginnt startet einen bzw. mehrere Ordner über dem aktuellen Ordner bspw. **../../verzeichnis**
