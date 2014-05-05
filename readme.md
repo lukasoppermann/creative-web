@@ -2,6 +2,10 @@
 
 ## Material
 **Einführung in HTML (deutsch)** https://medium.com/design-technology/32b473516e25
+
+**Relative vs. Absolute Pfade (deutsch)** https://medium.com/creative-web/889b962d32e5
+
+
 ## Presentations
 
 **01 Introduction:** http://www.slideshare.net/lukasoppermann/creative-web-2-introduction
