@@ -2,7 +2,6 @@
 
 > CSS (Cascading Style Sheets) werden genutzt um die mit HTML erstellte Struktur zu gestalten.
 
-
 # Richtiger Coding-Style
 
 Ein guter Coding-Style ist zwar für das funktionieren des Codes nicht von Bedeutung, allerdings erleichtert es das finden von Fehler enorm. Durch einen ordentlichen und gleich bleibenden Stil ist es auch einfach sich im Code zurecht zu finden und die Hierarchien zu erkennen.
@@ -64,37 +63,34 @@ Es ist leicht bei der CSS-Programmierung Fehler zu machen und vor allem am Anfan
 **CSS Validator**
 Wenn etwas mit der Seite nicht stimmt bzw. einer der im Folgenden beschriebenen Umstände (leere Seite, falsche Styles, etc.) eintritt, sollte als erstes der CSS-Validator genutzt werden.
 
-Ein Validator ist ein Tool, welches den Syntax (Code) prüft und Fehler ausgibt. Dafür gibt es den offiziellen Validator des W3C http://validator.w3.org/#validate_by_input. Leider sind die Fehlermeldungen teilweise etwas Kryptisch, meistens kann man aber davon ausgehen, dass der Fehler zwischen der 5 Zellen vor der angegebenen Zeile und 5 Zeilen danach auftritt (bspw. wenn Zeile 12 angegeben ist, liegt der Fehler meist zwischen Zeile 7 und 17). 
+Ein Validator ist ein Tool, welches den Syntax (Code) prüft und Fehler ausgibt. Dafür gibt es den offiziellen Validator des W3C http://jigsaw.w3.org/css-validator/#validate_by_input. Leider sind die Fehlermeldungen teilweise etwas Kryptisch, meistens kann man aber davon ausgehen, dass der Fehler zwischen der 5 Zellen vor der angegebenen Zeile und 5 Zeilen danach auftritt (bspw. wenn Zeile 12 angegeben ist, liegt der Fehler meist zwischen Zeile 7 und 17). 
 
-Anfänglich sind Validatoren etwas umständlich, mit etwas Gewöhnung kann man so aber schnell den Fehler finden.
+Anfänglich sind Validatoren etwas umständlich, mit ein wenig Gewöhnung kann man damit aber schnell den Fehler finden.
 
 **Auskommentieren**
 
 Sofern man überhaupt keine Idee hat wo der Fehler liegen könnten und auch der Validator nicht hilft, kann man anfangen Teile des Codes auszukommentieren, d.h. den Code mit Kommentar-Zeichen zu umgeben, damit dieser temporär deaktiviert ist. Funktioniert der Rest dann, muss der Fehler innerhalb des auskommentierten Bereiches liegen.
 
-<div>...</div>
+#page{
+	...
+}
 
-<!-- hier beginnt das kommentar
-<div< ... </div>
-und hier endet es -→
+/* hier beginnt das kommentar
+#.fehler{
+	...
+}
+und hier endet es */
 
-<p>...</p>
-
-**Typische Fehler suchen**
-
-
-kommt nach letztem Selektor
-
-#id, class,{
-
+.item{
+	...
 }
 
 
+## Typische Fehler suchen
 
+Oft lohnt sich ein Kurzer Blick und man findet selbst einen der unten aufgeführten Fehler. Wenn man nach jeder Änderung kurz testet, ob die Seite noch funktioniert, ist klar, sobald ein Fehler auftritt, dass es mit der letzen Änderung zusammen hängt.
 
-
-Oft findet man auch schnell selbst einen der unten aufgeführten Fehler. Wenn ihr nach jeder Änderung kurz testet, ob die Seite noch funktioniert, wisst ihr ja sobald ein Fehler auftritt, dass es mit der letzen Änderung zusammen hängt. Der Fehler lässt sich somit oft schnell auffinden. 
-Das falsche schließen von Tags kann auch gut mithilfe der *Suchen und ersetzen* Funktion gefunden werden. ersetzt einfach alle **<** durch **<** (also dasselbe Zeichen) und alle **>** durch **>**. Die Anzahl der Ersetzung wir bspw. in Textmate angezeigt und sollte identisch sein.
+Das falsche schließen von Tags kann auch gut mithilfe der *Suchen und ersetzen* Funktion gefunden werden. Ersetzt einfach alle **{** durch **{** (also dasselbe Zeichen) und alle **}** durch **}**. Die Anzahl der Ersetzung wir bspw. in Textmate angezeigt und sollte identisch sein.
 
 **Stackoverflow / Communities**
 
@@ -102,47 +98,73 @@ Programmierer sind im allgemeinen recht hilfsbereite Menschen und so gibt es ein
 
 ## Häufige Fehler
 
-**Tag ist nicht geschlossen**
+**Kommata nach dem letzten Selektor**
 
-Das äußert sich zumeist indem der Style falsch ist oder auf einmal ein sehr großer Bereich ein Link oder eine Überschrift ist. Zumeist wurde das schließen Tag entweder ganz vergessen oder enthält keinen Slash.
+Mehrere Selektoren werden mit Kommata getrennt, folgt allerdings fälschlicher Weise ein Komma nach dem letzten Selektor, wird die Regel fehlerhaft.
 
-<h1> Title <!-- hier fehlt eine </h1>-Element -->
-<p>Das hier wird nun auch als Überschrift dargestellt.</p>
+/* falsch verknüpfte Selektoren, da Komma vor { */
+#id, .class,{
+	...
+}
+/* richtig, ohne Komma vor { */
+#id, .class{
+	...
+}
 
-<h2>Überschrift<h2> <!-- hier fehlt eine / in dem h2-Element -->
-<p>Das hier wird nun auch als Überschrift dargestellt.</p>
+**Falscher Typ-Indikator**
 
-**Tag-Klammer ist nicht geschlossen**
+Elemente haben keinen Indikator, Klassen den Punkt, IDs die Raute und Pseudoelemente einen Doppelpunkt. Wenn diese Zeichen verwechselt werden, kann das gesuchte Elemente nicht gefunden werden und der Style wird nicht angewandt.
 
-Dieser Fehler äußert sich meist, indem die komplette Seite und auch der Quelltext leer ist.
+/* index.html */
+<p class="message">Hallo!</p>
 
-<!-- schließender h1-Tag ist falsch, da < anstatt > am Ende -->
-<h1> Title </h1<   
+/* style.css als ID markiert */
+#message{
+	color: red;
+}
 
-<!-- Richtig wäre </h1> -->
-<h1> Title </h1>
+/* style.css richtig als Klasse markiert */
+.message{
+	color: red;
+}
 
-**Falsche Reihenfolge beim Schließen von Elementen**
+**Regel-Klammer ist nicht richtig geschlossen**
 
-Dieser Fehler zeigt sich meist indem die Styles falsch dargestellt werden. Hier würde sowohl _Überschrift_ als auch _Copy Text_ als Headline dargestellt werden.
+Die schließende oder öffnende Klammer einer CSS Regel wurde vergessen oder ist falsch herum.
+Dieser Fehler äußert sich meist, indem viele Styles nicht mehr angewandt werden.
 
-<h1>Überschrift
-<p>Copy Text</p></h1>
+/* schließende Klammer falsch herum */
+.class{
+	...
+{
+
+/* richtig wäre */
+.class{
+	...
+}
+
+/* andere Fehler: doppelte Klammer, keine Klammer */
+.class{{
+	...
+}
+.class
+	...
+}
 
 **Falsche Anführungszeichen**
 
-Bei Attributen vergisst man oft die Anführungszeichen komplett, oder an einer stelle.
-Dieser Fehler zeigt sich meist indem die komplette Seite und auch der Quelltext leer ist, da ein Parse-Error (Fehler beim Aufbereiten des Dokumentes durch den Browser) auftritt.
+Nur wenige Werte in CSS brauchen Anführungszeichen, bei diesen können aber einige Fehler auftreten.
 
-<!-- Gar keine Anführungszeichen -->
-<a href=http://www.google.de>Google</a>
+/* Gar keine Anführungszeichen (kann zu Fehlern führen) */
+font-family: Helvetica Neue
 
-<!-- Anführungszeichen nur auf einer Seite -->
-<img src="image.jpg />
+/* Anführungszeichen nur auf einer Seite */
+font-family: "Helvetica Neue
 
-<!-- Doppelte Anführungszeichen auf einer Seite -->
-<div class="class-name"">...
+/* Doppelte / verschiedene Anführungszeichen auf einer Seite */
+font-family: "Helvetica Neue""
+font-family: "Helvetica Neue'
 
-<!— Falsche (typografische) Anführungszeichen -->
-<div class=”class-name„>…
-<div class=«class-name»>…
+/* Falsche (typografische) Anführungszeichen */
+font-family: ”Helvetica Neue„
+font-family: «Helvetica Neue»
