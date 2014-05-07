@@ -57,12 +57,12 @@ Selektor{
 
 # Fehler finden und beheben
 
-Es ist leicht bei der HTML-Programmierung Fehler zu machen und vor allem am Anfang passiert das auch sehr oft. Das Resultat ist meist eine komplett weiße Seite und somit leider wenig hilfreich. Allerdings gibt es einige gute Möglichkeiten Fehler schnell zu finden und oft begangene Fehler auf die man achten kann.
+Es ist leicht bei der CSS-Programmierung Fehler zu machen und vor allem am Anfang passiert das sehr oft. Das Resultat ist meist eine komplett weiße Seite oder dass ein Großteil der Styles nicht angezeigt werden. Allerdings gibt es einige gute Möglichkeiten Fehler schnell zu finden und oft begangene Fehler auf die man achten kann.
 
 ## Techniken zur Fehlersuche
 
-**HTML Validator**
-Wenn etwas mit der Seite nicht stimmt bzw. einer der im Folgenden beschriebenen Umstände (leere Seite, falsche Styles, etc.) eintritt, sollte als erstes der HTML-Validator genutzt werden.
+**CSS Validator**
+Wenn etwas mit der Seite nicht stimmt bzw. einer der im Folgenden beschriebenen Umstände (leere Seite, falsche Styles, etc.) eintritt, sollte als erstes der CSS-Validator genutzt werden.
 
 Ein Validator ist ein Tool, welches den Syntax (Code) prüft und Fehler ausgibt. Dafür gibt es den offiziellen Validator des W3C http://validator.w3.org/#validate_by_input. Leider sind die Fehlermeldungen teilweise etwas Kryptisch, meistens kann man aber davon ausgehen, dass der Fehler zwischen der 5 Zellen vor der angegebenen Zeile und 5 Zeilen danach auftritt (bspw. wenn Zeile 12 angegeben ist, liegt der Fehler meist zwischen Zeile 7 und 17). 
 
