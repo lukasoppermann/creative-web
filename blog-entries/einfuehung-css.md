@@ -2,6 +2,35 @@
 
 > CSS (Cascading Style Sheets) werden genutzt um die mit HTML erstellte Struktur zu gestalten.
 
+# Grundlagen
+
+## Einbinden von CSS-Dateien
+
+Eine CSS-Datei ist ein reines Textdokumente mit der Endung **.css**. Innerhalb einer CSS-Datei müssen keine Angaben über die Art des Dokumentes gemacht werden, da alle Nötigen Informationen schon bei der Einbindung angegeben werden.
+
+Das Einbinden funktioniert mit dem <link>-Tag muss 4 Attribute besitzen, **media** welches den Wert *print* oder *screen* besitzt. Eine mit *print* beschriebene CSS-Datei wird nur in dem Moment genutzt in welchem der Nutzer eine Seite ausdruckt. Mit *screen* gekennzeichnete CSS-Dateien werden für die Darstellung auf sämtlichen Bildschirmen, egal ob PC oder Smartphone genutzt. 
+Das wichtigste Attribut ist **href** (für hyperlink reference) welches den Pfad zur CSS-Datei angibt.
+Die letzten zwei Attribute **type** und **rel** beschreiben die Art des Dokumentes und den Anwendungsfall. Hier muss zwangsweise *type="text/css"* und *rel="stylesheet"* gesetzt werden.
+
+```
+	<link media="screen" href="/css/master.css" type="text/css" rel="stylesheet">
+```
+
+**Externe CSS-Dateien vs. Styles im header**
+Der Vorteil externer CSS-Dateien gegenüber integrierten Styles ist vielfältig. Zum einen kann die gleiche Datei für mehrere HTML-Seite genutzt werden, was den Code übersichtlicher, die Erstellung einzelner Seiten einfacher und das Laden der Seite (durch Caching der CSS-Datei) schneller macht. Zum anderen ist die Pflege einer Seite so viel einfacher. Will man bspw. die Link-Farbe ändern, so muss man dies nur in der CSS-Datei anpassen und nicht in jeder HTML-Datei. Es sollten nur externe CSS-Dateien genutzt werden, Style-Code im Head-Bereich sowie Inline-CSS (CSS innerhalb der Tags) ist auf jeden Fall zu vermeiden.
+
+## Was ist eine Regel?
+
+In einer CSS-Datei werden die Visuellen Eigenschaften von HTML-Elementen definiert. Diese Elemente werden zuvor mit einem Selektor ausgewählt, dieses Konstrukt bezeichnet man als eine Regel.
+
+Selektor{
+	Eigenschaft: Wert;
+}
+
+Eigenschaften sind etwas die Schriftfarbe *color* oder die Rundung der Ecken *border-radius*. Jede Eigenschaft hat einen spezifischen Namen in US-Englisch welcher zwangsweise korrekt geschrieben werden muss. Ein Übersicht der Eigenschaften ist auf MDN zu finden.
+
+Werte in CSS sind sehr vielfältig, Zahlenwerte wie Schrieftgröße *font-size* oder breite *width* können bspw. in Pixel, Prozent, EM oder REM angegeben werden oder die Zahl 0 (ohne Einheit) zugewiesen bekommen. Farben können als Name *red*, Hexwert *#223300*, rgb/rgba Wert *rgba(200,100,100,0.5)* und einen weiteren Farbsystemen angegeben werden.
+
 # Richtiger Coding-Style
 
 Ein guter Coding-Style ist zwar für das funktionieren des Codes nicht von Bedeutung, allerdings erleichtert es das finden von Fehler enorm. Durch einen ordentlichen und gleich bleibenden Stil ist es auch einfach sich im Code zurecht zu finden und die Hierarchien zu erkennen.
