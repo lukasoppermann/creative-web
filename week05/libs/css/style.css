@@ -106,7 +106,7 @@ html {
 
 /* Small to medium screens */
 
-@media (min-width: 24em) {
+@media (max-width: 30em) {
 	[class*=" small-column-"]{
 		flex: none;
 	}
