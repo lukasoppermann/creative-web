@@ -27,7 +27,7 @@
 
 ## Excercise
 
-**Assignment 04**
+**Assignment 04**   
 1. Erstellt eine HTML-Seite `index.html` mit:
 * einer Navigation mit links zu zwei weiteren HTML-Seiten (`about.html` und `kontakt.html`)
 * einem grid mit einigen Portfolio-Items
