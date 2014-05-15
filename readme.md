@@ -27,7 +27,23 @@
 
 ## Excercise
 
-**Week 03**
+**Assignment 04**
+1. Erstellt eine HTML-Seite `index.html` mit:
+* einer Navigation mit links zu zwei weiteren HTML-Seiten (`about.html` und `kontakt.html`)
+* einem grid mit einigen Portfolio-Items
+* 3 Stufen des Grids (Normal, Tablet, Mobile) (Stichwort: Mediaqueries)
+
+2. `about.html` Layout mit Text und Bild nebeneinander:
+* Kurztext (2/3)
+* Bild (1/3)
+
+3. `Kontakt.html`:
+Eure Kontaktdaten mit email-link.
+
+
+-----
+
+**Assignment 03**
 
 1. Write an html pages and include an external js file.
  * add a local variable
@@ -45,7 +61,7 @@ pseudo-class
 
 -----
 
-**Week 02**  
+**Assignment 02**  
 1. Write 3 html pages with a navi \<ul> linking them
 together.
  * Use the same stylesheet for all three files
@@ -61,8 +77,7 @@ http://de.wikipedia.org/wiki/JavaScript_Object_Notation
 
 -----
 
-**Week 01**
-* github Account erstellen
+**Assignment 01**
 * `index.html`-Seite erstellen
   * `base.css` erstellen und in die index.html einbinden
   * min. 10 verschiedenen HTML-Tags (wie bspw. \<div>) nutzen
