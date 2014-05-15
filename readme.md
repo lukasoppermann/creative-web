@@ -40,7 +40,6 @@
 3. `Kontakt.html`:
 Eure Kontaktdaten mit email-link.
 
-
 -----
 
 **Assignment 03**
@@ -89,6 +88,14 @@ http://de.wikipedia.org/wiki/JavaScript_Object_Notation
 
 **HTML Einführung:** https://developer.mozilla.org/de/docs/Web/Guide/HTML/Einf%C3%BChrung
 **Ein Tutorial in dem das meisten auch noch mal erklärt wird:** http://www.htmldog.com/guides/html/beginner/
+
+## Advanced excercise 
+Webseite mit:
+* Grid-System
+	* Mediaqueries und Layoutanpassungen (min. Mobile & Desktop)
+* responsive images via picturefill http://
+* adding classes via media-queried javascript http://
+* Retina ready Logo & icons mit svg-sprite http://
 
 ## Link collection
 
