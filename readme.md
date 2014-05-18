@@ -93,9 +93,9 @@ http://de.wikipedia.org/wiki/JavaScript_Object_Notation
 Webseite mit:
 * Grid-System
 	* Mediaqueries und Layoutanpassungen (min. Mobile & Desktop)
-* responsive images via picturefill http://
-* adding classes via media-queried javascript http://
-* Retina ready Logo & icons mit svg-sprite http://
+* responsive images via picturefill http://scottjehl.github.io/picturefill/
+* adding classes via media-queried javascript https://github.com/JoshBarr/on-media-query
+* Retina ready Logo & icons mit svg-sprite http://css-tricks.com/svg-sprites-use-better-icon-fonts/
 
 ## Link collection
 
