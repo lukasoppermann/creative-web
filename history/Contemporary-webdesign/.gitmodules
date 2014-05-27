@@ -1,0 +1,3 @@
+[submodule "tag-3/libs/js/mediaquery"]
+	path = tag-3/libs/js/mediaquery
+	url = https://github.com/JoshBarr/on-media-query.git

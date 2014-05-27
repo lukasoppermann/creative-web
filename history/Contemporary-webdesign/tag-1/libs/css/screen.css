@@ -1,0 +1,262 @@
+/* --------------------------- */
+/* CSS Normalization */
+html, body, div, span,
+h1, h2, h3, h4, p,
+a, ol, ul, li,
+article, aside, footer, header,
+nav, section,{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    line-height: inherit;    
+    vertical-align: baseline;
+    font-weight: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, footer, header, nav, section {
+    display: block;
+}
+ol, ul { list-style: none; }
+q:before, q:after {
+    content: '';
+    content: none;
+}
+html{ overflow-y: scroll; }
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-rendering: optimizeLegability;
+}
+img{
+    padding: 0;
+    margin: 0;    
+    border: 0;
+    position: relative;
+    float: left; /* to remove bottom spacing from image */
+}
+a, span, .hovers a:hover, a:active, a:focus{
+    color: inherit;
+    display: inline-block;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+p{ 
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+/* --------------------------- */
+/* Normal CSS */
+html, body{
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(70,70,70);
+    background: rgb(235,235,235);
+}
+/* --------------------------- */
+/* Header */
+header{
+    width: 100%;
+    margin: 0 auto;
+    max-height: 600px;
+    overflow: hidden;
+}
+#banner{
+    width: 100%;
+    height: auto;
+}
+/* --------------------------- */
+/* Nav */
+nav{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 160px;
+    z-index: 1; 
+    background: rgb(255,255,255);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);
+}
+.nav-container{
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+}
+nav .navigation{
+    float: right;
+    font-size: 16px;
+    height: 60px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+nav .navigation li{ float: left; }
+nav .navigation a{
+    padding: 20px 15px;
+}
+#logo{
+    float: left;
+    height: 100%;
+}
+.logo-img{
+    margin-top: 10px;
+}
+/* --------------------------- */
+/* Content Container */
+#content{
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -300px; 
+}
+#content:after {
+    content: "";
+    display: block;
+}
+footer, #content:after {
+    height: 300px;
+}
+/* --------------------------- */
+/* Footer */
+footer{
+    position: relative;
+    float: left;
+    z-index: 5;
+    background: rgb(255,255,255);
+    width: 100%;
+}
+footer section{
+    position: relative;
+    width: 94%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* --------------------------- */
+/* Skills */
+#skills{
+    background: rgb(255,255,255);
+    width: 100%;
+    height: 180px;
+}
+.skills{
+    width: 94%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+.skill{
+    width: 32%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: inline-block;
+}
+.skill h2{
+    float: left;
+    font-size: 18px;
+    margin: 16px 0 4px;
+}
+.skill-text{
+    float: left;
+    color: rgb(150,150,150);
+    width: 60%;
+}
+.skill .icon{
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 180px;
+}
+.skill .pseudo-sprite:before{
+    width: 90px;
+    height: 90px;
+    top: 20px;
+    left: 50%;
+    transform: translate3d(-50%, 0%, 0);
+    -webkit-transform: translate3d(-50%, 0%, 0);
+}
+.skill .pseudo-sprite.branding:before{
+    background-position: -180px 0; /* x y */
+}
+.skill .pseudo-sprite.print-design:before{
+    background-position: -90px 0; /* x y */
+}
+/* --------------------------- */
+/* Filters */
+#filters{
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+    text-align: center;
+}
+#filters ul{
+    display: inline-block;
+    z-index: 10;
+}
+#filters .filter{
+    float: left;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-style: italic;
+}
+/* --------------------------- */
+/* Items */
+#items{
+    width: 1300px;
+    margin: 0 auto 40px;
+}
+.item{
+    width: 300px;
+    height: 200px;
+    background: rgb(255,215,60);
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 29px;
+}
+.item:nth-child(4n){
+    margin-right: 0;
+}
+/* --------------------------- */
+/* about me */
+footer section:before{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 30%;
+    top: -4px;
+    position: absolute;
+    background: rgb(255,215,60);
+}
+.image-lukas-oppermann{
+    float: left;
+    display: block;
+    width: 30%;
+    height: auto;
+    background: rgb(150,185,190);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.image-lukas-oppermann img{
+    width: 100%;
+}
+footer .about-lukas{
+    width: 70%;
+    float: left;
+}
+.about-lukas h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 40px 0 20px 50px;
+}
+.about-lukas p{
+    font-size: 18px;
+    max-width: 400px;
+    color: rgb(150,150,150);
+    margin: 0 0 20px 50px;
+}

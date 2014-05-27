@@ -27,9 +27,75 @@ Selektor{
 	Eigenschaft: Wert;
 }
 
-Eigenschaften sind etwas die Schriftfarbe *color* oder die Rundung der Ecken *border-radius*. Jede Eigenschaft hat einen spezifischen Namen in US-Englisch welcher zwangsweise korrekt geschrieben werden muss. Ein Übersicht der Eigenschaften ist auf MDN zu finden.
+#### Eigenschaften 
+Beschreiben etwa die Schriftfarbe *color* oder die Rundung der Ecken *border-radius*. Jede Eigenschaft hat einen spezifischen Namen in US-Englisch welcher zwangsweise korrekt geschrieben werden muss. Ein Übersicht der Eigenschaften ist auf MDN zu finden.
 
+#### Werte
 Werte in CSS sind sehr vielfältig, Zahlenwerte wie Schrieftgröße *font-size* oder breite *width* können bspw. in Pixel, Prozent, EM oder REM angegeben werden oder die Zahl 0 (ohne Einheit) zugewiesen bekommen. Farben können als Name *red*, Hexwert *#223300*, rgb/rgba Wert *rgba(200,100,100,0.5)* und einen weiteren Farbsystemen angegeben werden.
+
+#### Selektoren
+Sind Suchschemata um im HTML-Code Elemente zu finden auf die dann die Regel angewandt wird. Sofern ein Selektor mehrere Elemente anspricht, wird die Regel auf alle Elemente angewandt. Es gibt verschiedene Möglichkeiten Elemente anzusprechen, die gebräuchlichsten sind die folgenden.
+
+##### Elementen-Selektor
+Ein Element bspw. eine Liste <ul> kann einfach mit dem Elementen-Tag angesprochen werden.
+
+// HTML:
+<ul>
+  <li>...</li>
+</ul>
+
+// CSS:
+
+ul{
+	...
+}
+
+##### Klassen-Selektor
+Wurde einem (oder mehreren) Element eine Klasse über das class-Attribut zugewiesen kann dieses mithilfe eines class-selectors angesprochen werden. Ein mit einem Punkt beginnender Selektor wird von CSS als class-selector interpretiert.
+
+// HTML:
+<ul>
+  <li class="list-item">...</li>
+  <li class="list-item">...</li>
+</ul>
+
+// CSS:
+
+.list-item{
+	...
+}
+
+##### ID-Selektor
+Wurde einem Element eine ID (eine ID kann pro Seite nur ein einziges Mal verwendet werden) über das ID-Attribut zugewiesen kann dieses mithilfe eines id-selectors angesprochen werden. Ein mit einer Raute (#) beginnender Selektor wird von CSS als id-selector interpretiert. 
+
+// HTML:
+<ul id="list">
+  <li>...</li>
+</ul>
+
+// CSS:
+
+#list{
+	...
+}
+
+##### IDs vs. Klassen
+Sowohl IDs als auch Klassen haben ihre Vor- und Nachteile. IDs haben den Nachteil, dass sie nur ein einziges Mal pro Seite vorkommen können. Das bildet allerdings auch ihre Stärker, da sie dadurch sehr performant werden da der Browser sobald er ein Element mit einer ID gefunden hat aufhört zu suchen. Dies ist vor allem bei JavaScript, welches auch mittels Selektoren funktioniert bedeutend. IDs sollten somit nur für Elemente genutzt werden die ein einziges Mal vorkommen, wie bspw. ein Logo oder eine Navigation. Klassen hingegen können mehrfach vorkommen und sollten für Elemente verwendet werden wie bspw. Links oder Menüpunkte. Der Vorteil hierbei ist, dass eine CSS-Regel nur ein einziges Mal geschrieben werden muss, aber auf alle Elemente mit einer bestimmten Klasse angewandt wird.
+
+##### Pseudo-Selektoren
+In CSS gibt es sogenannte Pseudo-Selektoren oder auch Pseudo-Klassen. Der Name kommt daher, dass diese kein gesetztes Attribut eines Elementes wie eine ID ansprechen, sondern einen Zustand oder eine Gegebenheit. Die wohl am häufigsten gebrauchte Pseudo-Klasse ist :hover, welche eine Element nur dann anspricht, wenn sich der Mauszeiger des Nutzer über diesem Element befindet (bspw. um den Stil eines Links zu ändern, wenn man mit der Maus darüber geht).
+
+##### Komplexe Selektoren
+Es ist möglich, und auch oft nötig, die oben genannten Selektoren zu kombinieren und so Komplexe Suchschemata zu erzeugen.
+
+
+
+....????
+
+
+
+
+
 
 # Richtiger Coding-Style
 

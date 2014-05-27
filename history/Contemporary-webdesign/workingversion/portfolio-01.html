@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="author" content="Lukas Oppermann - vea.re" />
+	<meta name="description" content="" />
+	<meta name="robots" content="index,follow" />
+	<meta name="language" content="en" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+	<style type="text/css" media="screen">
+		.image-container{
+			float: left;
+		}
+		.image-container img{
+			float: left;
+			height: 100%;
+			width: auto;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+
+	<div class="image-container">
+		<img src="./media/item_01.jpg" alt="" />
+		<img src="./media/item_01.jpg" alt="" />
+		<img src="./media/item_01.jpg" alt="" />
+		<img src="./media/item_01.jpg" alt="" />
+		<img src="./media/item_01.jpg" alt="" />
+		<img src="./media/item_01.jpg" alt="" />
+		<img src="./media/item_01.jpg" alt="" />
+		<img src="./media/item_01.jpg" alt="" />
+	</div>
+	<script src="./libs/js/jquery.js" type="text/javascript" charset="utf8"></script>
+	<script type="text/javascript" charset="utf-8">
+	;(function( $ )
+	{
+		// ----------------------------------------------------
+		// debounced resize event (fires once every 100ms)
+		$.fs_resize = function( c, t, f )
+		{
+			if( t == undefined ){ t = 100; }
+			window.onresize = function(){
+				clearTimeout( f );
+				f = setTimeout( c, t)
+			};
+			return c;
+		};	
+		// ----------------------------------------------------
+	// add jquery to scope	
+	})( jQuery );
+
+	$(function(){
+		var menuHeight = 200;
+		var windowHeight = $(window).height();
+		var images = $('.image-container');
+		var width = 0;
+		
+		images.height(windowHeight-menuHeight);
+		images.find('img').each(function(){
+			width += $(this).width();
+		});
+		images.width(width);
+		
+		$.fs_resize(function(){
+			width = 0;
+			windowHeight = $(window).height();
+			images.height(windowHeight-menuHeight);
+			images.find('img').each(function(){
+				width += $(this).width();
+			});
+			images.width(width);
+		});
+	
+	});
+		
+	</script>
+
+</body>
+</html>

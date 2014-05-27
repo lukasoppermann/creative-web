@@ -1,0 +1,575 @@
+html{
+	overflow-y: scroll;
+}
+html, body{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-rendering: optimizeLegability;
+}
+
+/* -------------------------- */
+/* default css */
+html, body{
+	height: 100%;
+	font-size: 16px;
+	font-family: "Montserrat", 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 400;
+	color: rgb(70,70,70);
+	background: rgb(235,235,235);
+}
+/* -------------------------- */
+/* Sprite */
+.sprite, .pseudo-sprite:before{
+	background-image: url("../../layout/lukas-oppermann-sprite.png");
+}
+/* Retina sprite */
+@media
+only screen and (-Webkit-min-device-pixel-ratio: 2),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (   -moz-min-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and ( min-resolution: 2dppx ),
+only screen and ( min-resolution: 192dpi ),
+only screen and ( min-device-pixel-ratio: 2)
+{
+	.sprite, .pseudo-sprite:before{
+		background-image: url("../../layout/lukas-oppermann-sprite@2x.png");
+		background-size: 500px 360px; /* breite höhe*/
+	}
+}
+.pseudo-sprite:before{
+	display: block;
+	content: ""; /* ohne content wird das element nicht angezeigt*/
+	
+}
+.skill .pseudo-sprite:before{
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	top: 20px;
+	left: 50%;
+	transform: translate3d(-50%,0,0);
+	-webkit-transform: translate3d(-50%,0,0);
+}
+/* -------------------------- */
+/* Icons */
+.skill .pseudo-sprite.print-design:before{
+	background-position: -90px 0; /* x y */
+}
+.skill .pseudo-sprite.branding:before{
+	background-position: -180px 0; /* x y */
+}
+.sprite.twitter{
+	background-position: -60px -90px;
+}
+.sprite.xing{
+	background-position: -120px -90px;
+}
+.sprite.linkedin{
+	background-position: 0 -90px;
+}
+#menu{
+	display: none;
+	position: absolute;
+	cursor: pointer;
+	right: 10px;
+	top: 15px;
+	height: 30px;
+	width: 30px;
+	background-position: -180px -90px;
+}
+.mobile #menu{
+	display: block;
+}
+/* -------------------------- */
+/* Header */
+header{
+	float: left; /* FIXES ERROR WHEN OPENING CONTACT */
+	width: 100%;
+	margin: 0 auto; /* oben rechts unten links */
+	max-height: 600px;
+/*	overflow: hidden; REMOVE FOR NAV*/
+}
+#banner{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+/* FIX FOR BANNER */
+.banner-wrapper{
+	float: left;
+	width: 100%;
+	max-height: 600px;
+	overflow: hidden;
+}
+/* FIX FOR BANNER */
+#content{
+	width: 100%;
+	float: left;
+}
+/* -------------------------- */
+/* Nav */
+nav{
+	position: relative;
+	float: left;
+	background: rgb(255,255,255);
+	width: 100%;
+	height: 160px;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15); /* links oben */
+}
+.tablet nav{ height: 60px; }
+.mobile nav{
+	height: 60px;
+}
+.nav-container{
+	height: 100%;
+	width: 100%;
+	max-width: 1400px;
+	/* Von hier: zentriert das Element */
+	margin-left: 50%;
+	transform: translate3d(-50%,0,0);
+	-webkit-transform: translate3d(-50%,0,0);
+	/* Bis hier: zentriert das Element */	
+}
+.navigation{
+	float: right;
+	padding: 0;
+	list-style: none;
+	height: 60px;
+	margin: 50px 20px 0 0;/* oben rechts unten links*/
+}
+.tablet .navigation, .mobile .navigation{
+	margin-top: 0;
+}
+.navigation li{
+	float: left;
+}
+.mobile .navigation li, .mobile .navigation{
+	width: 100%;
+}
+.mobile .navigation li{
+	border-top: 1px solid rgb(200,200,200);
+}
+.mobile .navigation a{
+	width: 100%;
+}
+.mobile .navigation{
+	height: 120px;
+	margin: -180px 0 0 0;
+}
+.navigation a{
+	float: left;
+	padding: 20px 15px;
+	color: rgb(70,70,70);
+	text-decoration: none;
+	border-radius: 3px;
+	background: transparent;
+	transition: background .4s ease;
+	-webkit-transition: background .4s ease;
+}
+.hover .navigation a:hover{
+	background: rgb(255,215,60);
+	transition: background .4s ease .1s;
+	-webkit-transition: background .4s ease .1s;
+}
+#logo{
+	float: left;
+	height: 100%;
+}
+.tablet #logo .logo-img, .mobile #logo .logo-img{
+	height: 100%;
+}
+.mobile #contact_link{ display: none; }
+/* -------------------------- */
+/* Skills */
+
+#skills{
+	background: rgb(255,255,255);
+	width: 100%;
+}
+.skills{
+	width: 94%;
+	max-width: 1400px;
+	height: 100%;
+	margin: 0 auto;
+}
+.skill{
+	width: 32%;
+	height: 100%;
+	padding: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.skill h2{
+	float: left;
+	font-size: 22px;
+	line-height: 100%;
+	margin: 16px 0 4px;
+}
+.skill-text{
+	float: left;
+	color: rgb(125,125,125);
+}
+.skill .icon{
+	position: relative;
+	float: left;
+	height: 160px;
+}
+.skill-text-wrapper{
+	float: left;
+}
+/* -------------------------- */
+/* Filter */
+#filters{
+	width: 100%;
+	float: left;
+	margin: 20px 0;
+	text-align: center;
+}
+#filters ul{
+	padding: 0;
+	display: inline-block;
+	list-style: none;
+}
+#filters .filter-link{
+	float: left;
+	padding: 10px 20px;
+	margin: 10px 0;
+	font-style: italic;
+}
+/* -------------------------- */
+/* Items */
+#items{
+	width: 90%;
+	max-width: 1300px;
+	margin: 0 auto 40px;
+}
+.portfolio-item{
+	font-size: 16px;
+	height: 200px;
+	background: rgb(255,215,60);
+	display: inline-block;
+	margin: 0;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.portfolio-item img{
+	min-width: 100%;
+	min-height: 100%;
+}
+.portfolio-item:nth-child(4n){
+	margin-right: 0;
+}
+/* -------------------------- */
+/* Footer */
+footer section:before{
+	content: "";
+	display: block;
+	height: 4px;
+	width: 30%;
+	background: rgb(255,215,60);
+	position: absolute;
+	top: -4px;
+}
+footer{
+	position: relative;
+	float: left;
+	background: rgb(255,255,255);
+	width: 100%;
+}
+/* -------------------------- */
+/* Responsiveness */
+html{ font-family: 'mobile-portrait'; }
+@media screen and (max-width: 320px) and (orientation:portrait){
+	html{ font-family: 'mobile-portrait'; }
+}
+@media screen and (min-width: 400px) and (orientation:landscape){
+	html{ font-family: 'mobile-landscape'; }
+}
+@media screen and (min-width: 540px){
+	html{ font-family: 'tablet-small'; }
+}
+@media screen and (min-width: 780px){
+	html{ font-family: 'tablet'; }
+}
+@media screen and (min-width: 1100px){
+	html{ font-family: 'screen'; }
+}
+@media screen and (min-width: 1300px){
+	html{ font-family: 'widescreen'; }
+}
+/* --------------------------- */
+/* about me */
+footer section{
+    position: relative;
+    width: 94%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.dribbble:before{ background-position: -90px -90px; }
+.forrst:before{ background-position: -150px -90px; }
+.vimeo:before{ background-position: -30px -90px; }
+.image-lukas-oppermann:before{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    top: -4px;
+    z-index: 10;
+    position: absolute;
+    background: rgb(255,215,60);
+}
+.image-lukas-oppermann{
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 100%;
+}
+.image-lukas-oppermann .img-wrap{
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    max-height: 100%;
+}
+.image-lukas-oppermann img{
+    width: 100%;
+    float: left;
+}
+.about-lukas h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 40px 0 20px 50px;
+}
+.tablet .about-lukas h3, .mobile .about-lukas h3{ margin: 20px 0 20px 0px; }
+.about-lukas p{
+    font-size: 18px;
+    max-width: 400px;
+    color: rgb(150,150,150);
+    margin: 0 0 20px 50px;
+}
+.tablet .about-lukas p, .mobile .about-lukas p{ margin: 0 0 20px 0px; }
+footer .social-media{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.tablet.small footer .social-media, .mobile footer .social-media{ 
+    margin-top: 10px; 
+    text-align: center;
+}
+footer .social-media li{ 
+	margin-top: 10px; 
+	list-style: none;
+}
+footer .social-media ul{
+	padding: 0;
+}
+.tablet footer .social-media ul, .mobile footer .social-media ul{
+    display: inline-block;
+}
+.tablet footer .social-media li, .mobile footer .social-media li{ 
+    float: left; 
+    margin: 10px 10px 10px 0;
+}
+footer .social-media .pseudo-sprite{
+    color: rgb(150,150,150);
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    padding-top: 6px;
+    height: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration: none;
+    transition: color .4s ease .1s;
+    -webkit-transition: color .4s ease .1s;
+}
+footer .social-media .pseudo-sprite:before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+	top: 3px;
+	left: 5px;
+	position: absolute;
+    overflow: hidden;
+    opacity: 0.5;
+    transition: opacity .4s ease .1s;
+    -webkit-transition: opacity .4s ease .1s;
+}
+.hover footer .social-media .pseudo-sprite:hover{
+    color: rgb(70,70,70);
+}
+.hover footer .social-media .pseudo-sprite:hover:before{
+    opacity: 0.8;
+}
+/* --------------------------- */
+/* Contact */
+#contact{
+    position: relative;
+    height: auto;
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgb(235,235,235);
+    transition: max-height .4s ease;
+    -webkit-transition: max-height .4s ease;
+}
+.mobile #contact.active{
+    padding-bottom: 120px;
+}
+#contact.active{
+    margin-top: 0;
+    max-height: 500px;
+}
+#contact section{
+    width: 94%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+#contact h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 40px 0 20px 50px;
+}
+.tablet #contact h3{ font-size: 26px; }
+.tablet.small #contact h3, .mobile #contact h3{ margin: 40px 0 20px 0; }
+#contact h3:before{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    top: -40px;
+    position: absolute;
+    background: rgb(255,215,60);  
+}
+.mobile .find-me{ margin-top: 15px; }
+#contact .padding{ padding: 20px 0; }
+.mobile #contact .padding{ padding: 0; }
+#contact p{
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(100,100,100);
+}
+#contact .email{
+    font-size: 16px;
+    margin-top: 15px;
+}
+#contact .social-media{ 
+	font-size: 16px; 
+	list-style: none;
+	padding: 0;
+}
+#contact .social-media li{ margin-top: 10px; }
+.mobile #contact .social-media li{ 
+    margin: 10px 20px 20px 0; 
+    float: left;
+}
+#contact .social-media a{
+    height: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px 0 0 5px;
+    text-decoration: none;
+    color: rgb(100,100,100);
+    transition: color .4s ease .1s;
+    -webkit-transition: color .4s ease .1s;
+}
+.hover #contact .social-media li:hover a{
+    opacity: 1;
+    color: rgb(70,70,70);
+}
+#contact .social-media .sprite{
+    float: left;
+    width: 30px;
+    height: 30px;
+	margin-top: -7px;
+    opacity: 0.6;
+    transition: opacity .4s ease .1s;
+    -webkit-transition: opacity .4s ease .1s;
+}
+.hover #contact .social-media li:hover .sprite{
+    opacity: 0.8;
+}
+.email{
+	color: rgb(70,70,70);
+}
+.email:hover{
+	text-decoration: none;
+}
+/* --------------------------- */
+/* Portfolio Item Content */
+.portfolio-content .item-header.scroll{
+	max-width: 100%;
+	overflow-x: scroll;
+}
+.portfolio-content .horizontal-scroll img{
+	float: left;
+	height: 100%;
+	width: auto;
+}
+.portfolio-content{
+    float: left;
+    width: 100%;
+}
+.portfolio-content .item-header img{
+    width: 100%;
+    position: relative;
+}
+.portfolio-content .item-header{
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto 0;
+}
+.mobile .portfolio-content .item-header.scroll{
+	height: auto;
+}
+.portfolio-content .grid{
+    position: relative;
+    max-width: 1300px;
+    width: 90%;
+    margin: -40px auto 20px;
+    background: rgb(255,255,255);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+    padding: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.portfolio-content .grid img{
+    width: 100%;
+}
+.mobile .portfolio-content .grid img, .tablet.small .portfolio-content .grid img{
+    margin-top: 20px;
+}
+.portfolio-content h1{
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+/* --------------------------- */
+/* BW Effekt */
+.bw{
+	position: absolute;
+	opacity: 1;
+	transition: opacity .4s ease;
+	-webkit-transition: opacity .4s ease;
+}
+.bw-box{
+	margin-top: 0;
+	position: relative;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	transition: box-shadow .4s ease, margin .4s ease;
+	-webkit-transition: box-shadow .4s ease, margin .4s ease;
+}
+.bw-box:hover{
+	margin-top: -5px;
+	box-shadow: 0px 2px 25px 0px rgba(0,0,0,0.5);
+}
+.bw-box:hover .bw{
+	opacity: 0;
+}
