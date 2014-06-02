@@ -86,15 +86,74 @@ Sowohl IDs als auch Klassen haben ihre Vor- und Nachteile. IDs haben den Nachtei
 In CSS gibt es sogenannte Pseudo-Selektoren oder auch Pseudo-Klassen. Der Name kommt daher, dass diese kein gesetztes Attribut eines Elementes wie eine ID ansprechen, sondern einen Zustand oder eine Gegebenheit. Die wohl am häufigsten gebrauchte Pseudo-Klasse ist :hover, welche eine Element nur dann anspricht, wenn sich der Mauszeiger des Nutzer über diesem Element befindet (bspw. um den Stil eines Links zu ändern, wenn man mit der Maus darüber geht).
 
 ##### Komplexe Selektoren
-Es ist möglich, und auch oft nötig, die oben genannten Selektoren zu kombinieren und so Komplexe Suchschemata zu erzeugen.
+Es ist möglich und auch oft nötig, die oben genannten Selektoren zu kombinieren und so Komplexe Suchschemata zu erzeugen.
 
+So kann ein Element genauer spezifiziert indem mehrere zutreffende Selektoren genutzt werden. **Zu beachten ist, dass hier keine Leerzeichen zwischen den Selektoren genutzt werden dürfen**
 
+// Element und Klasse, sinnvoll wenn eine Klasse auf mehrere Elemente gleichzeitig zutreffen kann.
+a.active{
+  ...
+}
+// mehrere Klassen
+.list-item.active{
+  ...
+}
 
-....????
+Um ein Element innerhalb eines anderen Elementes zu finden, kann man Selektoren mit Leerzeichen kombinieren. Jedes Leerzeichen bewirkt die Suche nach einem Unterelement.
 
+// HTML
+<ul class="list">
+	<li class="list-item">...</li>
+</ul>
 
+// CSS um <li> mit der Klasse list-item zu finden
+.list .list-item{
+  ...
+}
 
+# Gewicht einer Regel
+Wenn mehrere Regeln die selben Eigenschaften eines Elementes beeinflussen muss der Browser entscheiden welchen Wert die Eigenschaft schlussendlich haben muss. Dafür gibt es zwei Kriterien: **Position** und **Gewicht**.
 
+## Position 
+Einfach gesagt, die letzte Angabe wird genutzt. D.h. wenn zwei Regeln auf ein Element wirken und das gleiche Gewicht haben und beide die Eigenschaft *color* beschreiben, wird die Angabe der letzten Regel genutzt.
+
+// HTML
+<p class="text copy">Lorem ...</p>
+
+// CSS
+.text{
+  color: red;
+}
+.copy{
+  color: blue;
+}
+// Der Text ist Blau
+
+p{
+  font-size: 12px;
+	font-size: 1em;
+}
+// Die Schriftgröße ist 1em
+
+## Gewicht
+Das Gewicht eine Regel hängt von der Anzahl und Art der Selektoren ab. Eine Klasse *.copy* ist schwerer als ein Element *p*. Eine ID #logo ist schwerer als eine Klasse und somit auch schwerer als ein Element. 
+
+Der Faktor Gewicht ist stärker als die Position, d.h., dass eine "schwerere" Regel auch dann angewandt wird, wenn Sie früher im CSS vorkommt als eine "leichtere" Regel.
+
+Weitere Infos dazu gibt es bei Star Wars http://www.stuffandnonsense.co.uk/archives/images/specificitywars-05v2.jpg
+
+# CSS Attribute
+Es gibt eine große Anzahl an CSS-Attributen, viele davon sind aus der CSS1 oder CSS2 Spezifikation wie color, background-color oder border und werden von allen Browsern unterstützt. Einige spannende Attribute sind allerdings aus der CSS3 Spezifikation und werden somit nur von aktuellen Browsern unterstützt, das sind bspw. border-radius, text-shadow oder box-shadow. Solange die hauptsächliche Zielgruppe in der Browsergruppe liegt, die CSS3 unterstützen oder wenn in älteren Browsern durch die Fehlende Unterstützung die Funktionalität der Seite nicht beeinträchtigt wird, können und sollten CSS3-Attribute problemlos genutzt werden. Eine Übersicht über den Browser-Support findet man auf caniuse.com.
+
+## Vendor-prefix
+Viele Browser die auf caniuse.com CSS3 unterstützen haben in der ecke einen Vermerk wie bspw. -moz oder -webkit. Das ist ein Vendor-prefix, der entsprechend des Namens vor das Attribut oder den Wert gestellt wird. So muss das Attribut box-sizing mit jeweils einem Vendor-prefix versehen werden um auch in älteren Versionen von Firefox und Webkit basierten Browsern (bspw. Safari und ältere Chrome-Versionen) unterstützt zu werden.
+Das den standards entsprechende Attribut ohne Prefix sollte immer an letzter stelle stehen.
+
+-moz-box-sizing: border-box; 
+-webkit-box-sizing: border-box; 
+box-sizing: border-box;
+
+Ein Vendor-prefix ist somit eine Markierung eines Browserherstellers (Vendors), dass bestimmte Attribute in einer noch nicht finalen Version integriert wurden. Die Idee ist, dass sowohl alte als auch neuere Versionen des Attributes unterstützt werden können, wenn sich der Syntax der Implementierung ändern und dieser Syntax dann ohne Prefix eingebaut wird. Da die meisten Browser allerdings sowieso die W3C-Standards implementieren ist diese vorgehen eigentlich sinnfrei, sodass die meisten Browserhersteller in den neueren Versionen und bei der Implementierung neuer Attribute keine Präfixe mehr nutzen.
 
 
 # Richtiger Coding-Style
@@ -146,8 +205,6 @@ Für die alle Attributswerte, die Klammern benötigen werden doppelte Klammern v
 Selektor{
 	font-family: "Helvetica Neue";
 }
-
-
 
 # Fehler finden und beheben
 
