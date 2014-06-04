@@ -8,7 +8,7 @@
 
 Eine CSS-Datei ist ein reines Textdokumente mit der Endung **.css**. Innerhalb einer CSS-Datei müssen keine Angaben über die Art des Dokumentes gemacht werden, da alle Nötigen Informationen schon bei der Einbindung angegeben werden.
 
-Das Einbinden funktioniert mit dem <link>-Tag muss 4 Attribute besitzen, **media** welches den Wert *print* oder *screen* besitzt. Eine mit *print* beschriebene CSS-Datei wird nur in dem Moment genutzt in welchem der Nutzer eine Seite ausdruckt. Mit *screen* gekennzeichnete CSS-Dateien werden für die Darstellung auf sämtlichen Bildschirmen, egal ob PC oder Smartphone genutzt. 
+Das Einbinden funktioniert mit dem <link>-Tag, dieser muss 4 Attribute besitzen, **media** welches den Wert *print* oder *screen* besitzt. Eine mit *print* beschriebene CSS-Datei wird nur in dem Moment genutzt in welchem der Nutzer eine Seite ausdruckt. Mit *screen* gekennzeichnete CSS-Dateien werden für die Darstellung auf sämtlichen Bildschirmen, egal ob PC oder Smartphone genutzt. 
 Das wichtigste Attribut ist **href** (für hyperlink reference) welches den Pfad zur CSS-Datei angibt.
 Die letzten zwei Attribute **type** und **rel** beschreiben die Art des Dokumentes und den Anwendungsfall. Hier muss zwangsweise *type="text/css"* und *rel="stylesheet"* gesetzt werden.
 

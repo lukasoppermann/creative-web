@@ -5,6 +5,8 @@
 
 **Einführung in CSS (deutsch)** https://medium.com/@lukasoppermann/einfuhrung-in-css-4050d731ee5
 
+**Einführung in JavaScript (deutsch)** https://medium.com/creative-web/einfuhrung-in-javascript-ccc3dad4a56d?source=tw-80cd3f2b2e6e-1401890393072
+
 **Relative vs. Absolute Pfade (deutsch)** https://medium.com/creative-web/889b962d32e5
 
 
