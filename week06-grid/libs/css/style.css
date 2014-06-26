@@ -85,10 +85,11 @@
 	width: 25%;
 }
 .column-1of3 {
-	width: 33.333333%;
+/*	width: 33.333333%;*/
+	flex: 0 0 33.333333%;
 }
 .column-1of2, .column-2of4, .column-half {
-	width: 50%;
+	flex: 0 0 50%
 }
 .column-2of3 {
 	width: 66.666666%;
