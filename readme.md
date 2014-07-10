@@ -121,8 +121,5 @@ https://developer.mozilla.org/en-US/docs/Web/CSS
 http://css-tricks.com/snippets/css/
 
 ### Grids
-**CSS grid system**  
-https://github.com/lukasoppermann/gridified
-
 **Grid & more for modern browsers only**  
 http://philipwalton.github.io/solved-by-flexbox/
