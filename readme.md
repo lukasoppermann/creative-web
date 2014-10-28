@@ -12,11 +12,7 @@
 
 ## Presentations
 
-**01 Introduction:** http://www.slideshare.net/lukasoppermann/creative-web-2-introduction
-
-**02 CSS:** http://www.slideshare.net/lukasoppermann/cw2-02-css
-
-**03 JavaScript:** http://www.slideshare.net/lukasoppermann/cw2-03
+**01 Introduction to web design & the internet:** http://www.slideshare.net/lukasoppermann/creative-web-01-introduction-to-the-web
 
 ## Links
 
