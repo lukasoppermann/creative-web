@@ -23,7 +23,7 @@
 [**Stackoverflow (Sehr hilfreiche Community)**](http://stackoverflow.com)
 
 ## Validator (Fehler im Code finden)
-Ein Validator ist ein Tool, welches den Syntax (Code) prüft und Fehler ausgibt.
+Ein Validator ist ein Tool, welches den Syntax (Code) prüft und Fehler ausgibt. Mehr Infos zu Validatoren gibts im [Artikel zu HTML](https://medium.com/creative-web/einfuhrung-in-html-32b473516e25).
 
 [**Validator HTML**](http://validator.w3.org/)  
 
