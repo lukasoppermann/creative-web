@@ -8,7 +8,6 @@ _*.*
 _*/
 logs/
 log-
-0*_*/
 *cache*/*.php
 sessions/
 storage/

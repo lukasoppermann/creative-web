@@ -1,29 +1,33 @@
 # creative web
 
 ## Material
-**Einführung in HTML (deutsch)** https://medium.com/design-technology/32b473516e25
+[**Einführung in HTML (deutsch)**](https://medium.com/design-technology/32b473516e25)
 
-**Einführung in CSS (deutsch)** https://medium.com/@lukasoppermann/einfuhrung-in-css-4050d731ee5
+[**Einführung in CSS (deutsch)**](https://medium.com/@lukasoppermann/einfuhrung-in-css-4050d731ee5)
 
-**Einführung in JavaScript (deutsch)** https://medium.com/creative-web/einfuhrung-in-javascript-ccc3dad4a56d?source=tw-80cd3f2b2e6e-1401890393072
+[**Einführung in JavaScript (deutsch)**](https://medium.com/creative-web/einfuhrung-in-javascript-ccc3dad4a56d?source=tw-80cd3f2b2e6e-1401890393072)
 
-**Relative vs. Absolute Pfade (deutsch)** https://medium.com/creative-web/889b962d32e5
+[**Relative vs. Absolute Pfade (deutsch)**](https://medium.com/creative-web/889b962d32e5)
 
 
 ## Presentations
 
-**01 Introduction to web design & the internet:** http://www.slideshare.net/lukasoppermann/creative-web-01-introduction-to-the-web
+**1.** [**Introduction to web design & the internet**](http://www.slideshare.net/lukasoppermann/creative-web-01-introduction-to-the-web)
 
 ## Links
 
-**Browsersupport von CSS & HTML** http://caniuse.com
+[**Caniuse.com (Browsersupport von CSS & HTML)**](http://caniuse.com)
 
-**Mozilla Dokumentation** https://developer.mozilla.org/en-US/docs/Web/
+[**Mozilla Dokumentation (hilfe zu HTML, CSS & JavaScript)**](https://developer.mozilla.org/en-US/docs/Web/)
 
-**Sehr hilfreiche Community** http://stackoverflow.com
+[**Stackoverflow (Sehr hilfreiche Community)**](http://stackoverflow.com)
 
-**Validator (Fehler im Code finden) CSS** http://jigsaw.w3.org/css-validator/#validate_by_input  
-**Validator HTML** http://validator.w3.org/
+## Validator (Fehler im Code finden)
+Ein Validator ist ein Tool, welches den Syntax (Code) prüft und Fehler ausgibt.
+
+[**Validator HTML**](http://validator.w3.org/)  
+
+[**Validator CSS**](http://jigsaw.w3.org/css-validator/#validate_by_input)
 
 ## Link collection
 
