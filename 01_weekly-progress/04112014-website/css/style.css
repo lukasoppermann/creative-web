@@ -1,0 +1,9 @@
+.navigation{
+  list-style: none;
+}
+.navi-item{
+  float: left;
+  margin: 5px; /* abstand außen am element*/
+  border: 1px solid red;
+  padding: 10px; /* abstand in dem element*/
+}
