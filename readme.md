@@ -14,6 +14,8 @@
 
 **1.** [**Introduction to web design & the internet**](http://www.slideshare.net/lukasoppermann/creative-web-01-introduction-to-the-web)
 
+**2.** [**Basics of HTML & CSS**](http://www.slideshare.net/lukasoppermann/btk-creativeweb02)
+
 ## Links
 
 [**Caniuse.com (Browsersupport von CSS & HTML)**](http://caniuse.com)
