@@ -1,6 +1,6 @@
 # creative web
 
-## Material
+## Article
 [**Einführung in HTML (deutsch)**](https://medium.com/design-technology/32b473516e25)
 
 [**Einführung in CSS (deutsch)**](https://medium.com/@lukasoppermann/einfuhrung-in-css-4050d731ee5)
