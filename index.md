@@ -21,6 +21,8 @@ layout: index
 
 **2.** [**Basics of HTML & CSS**](http://www.slideshare.net/lukasoppermann/btk-creativeweb02)
 
+**3.** [**Advanced CSS**](http://www.slideshare.net/lukasoppermann/btk-creativeweb03)
+
 ## Links
 
 [**Caniuse.com (Browsersupport von CSS & HTML)**](http://caniuse.com)
