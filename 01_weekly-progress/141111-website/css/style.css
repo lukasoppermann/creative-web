@@ -1,0 +1,43 @@
+/* ---------------- */
+/* Reset */
+html{
+  font-size: 62.5%; /* now 1rem = 10px*/
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+/* ---------------- */
+/* header */
+.header{
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.9); /* 255,255,255,0.9 */
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.25); /* x y blur spread */
+}
+.navigation{
+  list-style: none;
+  float: left;
+  margin: 0;
+  height: 100%;
+}
+.navi-item{
+  font-size: 1.6rem;
+  float: left;
+  margin: 0 5px 0 5px; /* abstand außen am element oben rechts unten links*/
+  border: 1px solid red;
+  padding: 10px; /* abstand in dem element*/
+  height: 100%;
+}
+/* ---------------- */
+/* content */
+.content{
+  font-size: 2rem;
+}
