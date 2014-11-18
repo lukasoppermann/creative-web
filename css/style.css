@@ -5,6 +5,9 @@ html{
   box-sizing: border-box;
 }
 body{
+  /* Liste von Schriftarten mit Kommatar separaiert, Anführungszeichen für Schriften mit
+  Leerzeichen im Namen */
+  font-family: 'Open Sans', 'Helevtica Neue', Arial, sans-serif;
   margin: 0;
 }
 *, *:before, *:after{
@@ -30,14 +33,23 @@ body{
 }
 .navi-item{
   font-size: 1.6rem;
+  line-height: 100%;
   float: left;
   margin: 0 5px 0 5px; /* abstand außen am element oben rechts unten links*/
-  border: 1px solid red;
-  padding: 10px; /* abstand in dem element*/
   height: 100%;
+  text-transform: uppercase;
+}
+.navi-item-link{
+  display: block;
+  padding: 1.7rem 1rem; /* abstand im element 1. Wert = Oben und unten, 2. rechts und links*/
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
 }
 /* ---------------- */
 /* content */
 .content{
+  margin-top: 5rem;
+  padding: 2rem;
   font-size: 2rem;
 }
