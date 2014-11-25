@@ -40,6 +40,9 @@ Ein Validator ist ein Tool, welches den Syntax (Code) prüft und Fehler ausgibt.
 
 ## Link collection
 
+### Media Queries
+https://github.com/JoshBarr/on-media-query
+
 ### Introduction to HTML, CSS & more
 http://learn.shayhowe.com/
 http://learnlayout.com/
