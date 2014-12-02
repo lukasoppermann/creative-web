@@ -5,29 +5,28 @@ var queries = [
 {
   context: 'mobile',
   match: function() {
-    console.log('Mobile callback. Maybe hook up some tel: numbers?');
-    // Your mobile specific logic can go here.
+    document.body.classList.add('mobile');
   },
   unmatch: function() {
-    // We're leaving mobile.
+    document.body.classList.remove('mobile');
   }
 },
 {
   context: 'tablet',
   match: function() {
-    console.log('skinny callback! Swap the class on the body element.');
-    // Your tablet specific logic can go here.
+    document.body.classList.add('tablet');
   },
   unmatch: function() {
-
+    document.body.classList.remove('tablet');
   }
-
 },
 {
   context: 'wide-screen',
   match: function() {
-    console.log('wide-screen callback woohoo! Load some heavy desktop JS badddness.');
-    // your desktop specific logic can go here.
+    document.body.classList.add('wide-screen');
+  },
+  unmatch: function() {
+    document.body.classList.remove('wide-screen');
   }
 }
 ];

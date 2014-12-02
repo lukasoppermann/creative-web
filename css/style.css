@@ -17,9 +17,14 @@ body{
 
 /* ---------------- */
 /* Meadiaqueries */
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 500px) {
   html {
     font-family: 'tablet';
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-family: 'wide-screen';
   }
 }
 /* ---------------- */
