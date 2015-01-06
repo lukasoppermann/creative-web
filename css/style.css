@@ -155,7 +155,7 @@ body{
   text-decoration: none;
   color: rgb(60,120,180);
 }
-.navi-item-link:hover{
+.navi-item-link:hover, .is-active .navi-item-link{
   background-color: rgb(245,245,245);
   background-image: -webkit-linear-gradient(top, rgb(235,235,235), rgb(255,255,255) );
   background-image: -moz-linear-gradient(top, rgb(235,235,235), rgb(255,255,255) );
@@ -201,4 +201,14 @@ body{
   padding-right: 0;
   margin-right: 0;
   border: none;
+}
+/* ---------------- */
+/* Portfolio */
+.portfolio-item{
+  overflow: hidden;
+  height: 250px;
+}
+.portfolio-item img{
+  width: 100%;
+  height: auto;
 }
