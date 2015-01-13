@@ -230,36 +230,9 @@ body{
 /* ---------------- */
 /* Menu */
 /*.navicon{
-  display: none;
-  height: 50px;
-  position: absolute;
-  top: 0;
-  width: 100%;
   cursor: pointer;
 }
-.mobile .navicon{
-  display: block;
-}
-.mobile .header.active{
-  height: auto;
-}
-.mobile .navigation{
-  background: rgb(255,255,255);
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 0;
-  height: auto;
-  transform: translate3d(0,-100%,0);
-}
-.mobile .header.active .navigation{
-  transform: translate3d(0,50px,0);
-}
-.mobile .navi-item{
-  float: left;
-  width: 100%;
-  margin: 0;
-}*/
+*/
 
 /* ---------------- */
 /* Mobile Nav */
@@ -283,7 +256,7 @@ body{
   padding: 0;
   width: 100%;
   float: left;
-  margin-top: -200px;
+  margin-top: -200px; /* -200px weil: 4 Menü-Items mit je 50px höhe*/
 }
 .mobile .header.is-active .navigation{
   margin-top: 0;
