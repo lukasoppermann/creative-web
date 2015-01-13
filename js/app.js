@@ -1,6 +1,6 @@
 /* click-event für menü icon in mobile view */
 document.querySelector('.nav-icon').addEventListener("click", function(){
-  document.querySelector('.header').classList.toggle('is-active');
+  document.querySelector('.navigation').classList.toggle('is-open');
 });
 
 var queries = [

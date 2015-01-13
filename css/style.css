@@ -155,7 +155,7 @@ body{
   text-decoration: none;
   color: rgb(60,120,180);
 }
-.navi-item-link:hover, .is-active .navi-item-link{
+.navi-item-link:hover, .is-active > .navi-item-link{
   background-color: rgb(245,245,245);
   background-image: -webkit-linear-gradient(top, rgb(235,235,235), rgb(255,255,255) );
   background-image: -moz-linear-gradient(top, rgb(235,235,235), rgb(255,255,255) );
@@ -241,6 +241,7 @@ body{
   font-size: 20px;
   line-height: 20px;
   padding: 15px 10px;
+  cursor: pointer;
 }
 /* in mobiler ansicht */
 .mobile .nav-icon{
@@ -251,14 +252,17 @@ body{
 }
 .mobile .header{
   height: auto;
+  background: rgb(255,255,255);
 }
 .mobile .navigation{
   padding: 0;
   width: 100%;
   float: left;
   margin-top: -200px; /* -200px weil: 4 Menü-Items mit je 50px höhe*/
+  -webkit-transition: margin .4s;
+  transition: margin .4s;
 }
-.mobile .header.is-active .navigation{
+.mobile .navigation.is-open{
   margin-top: 0;
 }
 .mobile .navi-item{
