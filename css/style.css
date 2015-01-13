@@ -172,11 +172,6 @@ body{
   background: rgb(225,225,225);
   height: 300px;
 }
-@media screen and (max-width: 600px) {
-  .banner{
-    background: red;
-  }
-}
 .banner-image{
   position: relative;
   margin-left: 50%;
@@ -232,3 +227,74 @@ body{
   width: 100%;
   border: 5px solid rgb(40,125,205);
 }
+/* ---------------- */
+/* Menu */
+/*.navicon{
+  display: none;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.mobile .navicon{
+  display: block;
+}
+.mobile .header.active{
+  height: auto;
+}
+.mobile .navigation{
+  background: rgb(255,255,255);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  height: auto;
+  transform: translate3d(0,-100%,0);
+}
+.mobile .header.active .navigation{
+  transform: translate3d(0,50px,0);
+}
+.mobile .navi-item{
+  float: left;
+  width: 100%;
+  margin: 0;
+}*/
+
+/* ---------------- */
+/* Mobile Nav */
+.nav-icon{
+  display: none;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 15px 10px;
+}
+/* in mobiler ansicht */
+.mobile .nav-icon{
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: right;
+}
+.mobile .header{
+  height: auto;
+}
+.mobile .navigation{
+  padding: 0;
+  width: 100%;
+  float: left;
+  margin-top: -200px;
+}
+.mobile .header.is-active .navigation{
+  margin-top: 0;
+}
+.mobile .navi-item{
+  width: 100%;
+  margin: 0;
+}
+
+
+
+
+
+/*++*/

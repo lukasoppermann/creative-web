@@ -1,5 +1,7 @@
-//  document.body.classList.remove("foo");
-//  document.body.classList.add("anotherclass");
+/* click-event für menü icon in mobile view */
+document.querySelector('.nav-icon').addEventListener("click", function(){
+  document.querySelector('.header').classList.toggle('is-active');
+});
 
 var queries = [
 {
