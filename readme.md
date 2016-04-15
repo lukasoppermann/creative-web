@@ -10,13 +10,7 @@
 [**Relative vs. Absolute Pfade (deutsch)**](https://medium.com/creative-web/889b962d32e5)
 
 
-## Presentations
 
-**1.** [**Introduction to web design & the internet**](http://www.slideshare.net/lukasoppermann/creative-web-01-introduction-to-the-web)
-
-**2.** [**Basics of HTML & CSS**](http://www.slideshare.net/lukasoppermann/btk-creativeweb02)
-
-**3.** [**Advanced CSS**](http://www.slideshare.net/lukasoppermann/btk-creativeweb03)
 
 ## Links
 
@@ -59,5 +53,10 @@ http://css-tricks.com/snippets/css/
 **Grid & more for modern browsers only**
 http://philipwalton.github.io/solved-by-flexbox/
 
-### BTK File-Server
-http://blogs.btk-fh.de/it/fileserver/
+## Old Presentations
+
+**1.** [**Introduction to web design & the internet**](http://www.slideshare.net/lukasoppermann/creative-web-01-introduction-to-the-web)
+
+**2.** [**Basics of HTML & CSS**](http://www.slideshare.net/lukasoppermann/btk-creativeweb02)
+
+**3.** [**Advanced CSS**](http://www.slideshare.net/lukasoppermann/btk-creativeweb03)
