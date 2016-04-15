@@ -10,7 +10,8 @@
 [**Relative vs. Absolute Pfade (deutsch)**](https://medium.com/creative-web/889b962d32e5)
 
 
-
+## Slides
+[**Introduction**](http://www.slideshare.net/lukasoppermann/btk-designing-for-the-web-2016)
 
 ## Links
 
