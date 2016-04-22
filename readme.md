@@ -13,6 +13,8 @@
 ## Slides
 [**Introduction**](http://www.slideshare.net/lukasoppermann/btk-designing-for-the-web-2016)
 
+[**User Experience**](http://www.slideshare.net/lukasoppermann/btk-designing-for-the-web-2016-ux)
+
 ## Links
 
 [**Caniuse.com (Browsersupport von CSS & HTML)**](http://caniuse.com)
@@ -30,25 +32,22 @@ Ein Validator ist ein Tool, welches den Syntax (Code) prüft und Fehler ausgibt.
 
 ## Link collection
 
-### Media Queries
-https://github.com/JoshBarr/on-media-query
-
 ### Introduction to HTML, CSS & more
-http://learn.shayhowe.com/
-http://learnlayout.com/
-http://www.codecademy.com/#!/exercises/0
+- http://learn.shayhowe.com/    
+- http://learnlayout.com/    
+- http://www.codecademy.com/#!/exercises/0    
 
 ### Article & Tutorials
-http://net.tutsplus.com/
-http://coding.smashingmagazine.com/
-http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/
-http://alistapart.com
-http://webdesign.tutsplus.com/
-http://tympanus.net/codrops/
+- http://net.tutsplus.com/
+- http://coding.smashingmagazine.com/
+- http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/
+- http://alistapart.com
+- http://webdesign.tutsplus.com/
+- http://tympanus.net/codrops/
 
 ### CSS properties explained
-https://developer.mozilla.org/en-US/docs/Web/CSS
-http://css-tricks.com/snippets/css/
+- https://developer.mozilla.org/en-US/docs/Web/CSS
+- http://css-tricks.com/snippets/css/
 
 ### Grids
 **Grid & more for modern browsers only**
