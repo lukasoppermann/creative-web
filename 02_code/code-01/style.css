@@ -1,4 +1,19 @@
-.headline{
-    font-family: Helvetica;
-    font-size: 24px;
+body{
+    margin: 0;
+}
+.menu{
+    float: left;
+    list-style: none;
+    background-color: rgb(50, 55, 60);
+    height: 60px;
+    width: 100%;
+    margin: 0;
+}
+.menu-item{
+    float: left;
+}
+.menu-link{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
 }
