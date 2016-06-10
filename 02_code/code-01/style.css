@@ -2,18 +2,36 @@ body{
     margin: 0;
 }
 .menu{
-    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
     list-style: none;
     background-color: rgb(50, 55, 60);
-    height: 60px;
     width: 100%;
     margin: 0;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .25);
+    /*box-shadow: x-offset y-offset Size Spread color*/
+
 }
 .menu-item{
-    float: left;
+    display: inline-block;
 }
 .menu-link{
+    color: rgb(255, 255, 255);
     display: block;
     text-decoration: none;
-    padding: 15px;
+    padding: 20px;
+}
+.menu-link.active{
+    background-color: orange;
+}
+.menu-link:not(.active):hover{
+    background-color: rgba(255, 255, 255, .25);
+}
+.content{
+    padding-top: 70px;
+}
+.big-text{
+    font-size: 20px;
+    width: 100px;
 }
